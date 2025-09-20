@@ -49,7 +49,7 @@ call :check_git_installed
 call :setup_repository
 call :setup_remote_if_needed
 call :show_repository_status
-call :pull_latest_changes
+call :check_remote_changes
 call :setup_lfs
 call :check_file_sizes
 echo.
@@ -71,21 +71,31 @@ echo.
 if "%menu_selection%"=="1" (
     powershell -Command "Write-Host '  > Commit Changes Now' -ForegroundColor Green"
     echo    Auto-Monitor Mode
+    echo    Pull Changes from Remote
     echo    Hard Reset to Remote
     echo    Force Push to Remote
 ) else if "%menu_selection%"=="2" (
     echo    Commit Changes Now
     powershell -Command "Write-Host '  > Auto-Monitor Mode' -ForegroundColor Green"
+    echo    Pull Changes from Remote
     echo    Hard Reset to Remote
     echo    Force Push to Remote
 ) else if "%menu_selection%"=="3" (
     echo    Commit Changes Now
     echo    Auto-Monitor Mode
+    powershell -Command "Write-Host '  > Pull Changes from Remote' -ForegroundColor Cyan"
+    echo    Hard Reset to Remote
+    echo    Force Push to Remote
+) else if "%menu_selection%"=="4" (
+    echo    Commit Changes Now
+    echo    Auto-Monitor Mode
+    echo    Pull Changes from Remote
     powershell -Command "Write-Host '  > Hard Reset to Remote' -ForegroundColor Red"
     echo    Force Push to Remote
 ) else (
     echo    Commit Changes Now
     echo    Auto-Monitor Mode
+    echo    Pull Changes from Remote
     echo    Hard Reset to Remote
     powershell -Command "Write-Host '  > Force Push to Remote' -ForegroundColor Red"
 )
@@ -101,17 +111,19 @@ for /f "tokens=*" %%a in ('powershell -NoProfile -Command "$Host.UI.RawUI.FlushI
 if "%key_input%"=="ENTER" goto :process_selection
 if "%key_input%"=="ESC" exit /b
 if "%key_input%"=="UP" (
-    if "%menu_selection%"=="1" set "menu_selection=4"
+    if "%menu_selection%"=="1" set "menu_selection=5"
     if "%menu_selection%"=="2" set "menu_selection=1"
     if "%menu_selection%"=="3" set "menu_selection=2"
     if "%menu_selection%"=="4" set "menu_selection=3"
+    if "%menu_selection%"=="5" set "menu_selection=4"
     call :display_menu
 )
 if "%key_input%"=="DOWN" (
     if "%menu_selection%"=="1" set "menu_selection=2"
     if "%menu_selection%"=="2" set "menu_selection=3"
     if "%menu_selection%"=="3" set "menu_selection=4"
-    if "%menu_selection%"=="4" set "menu_selection=1"
+    if "%menu_selection%"=="4" set "menu_selection=5"
+    if "%menu_selection%"=="5" set "menu_selection=1"
     call :display_menu
 )
 goto :menu_loop
@@ -128,6 +140,11 @@ if "%menu_selection%"=="1" (
     echo.
     goto :auto_monitor
 ) else if "%menu_selection%"=="3" (
+    echo.
+    echo Pull changes mode selected.
+    echo.
+    goto :pull_remote_changes
+) else if "%menu_selection%"=="4" (
     echo.
     echo Hard reset mode selected.
     echo.
@@ -155,8 +172,7 @@ if not defined from_menu (
     call :check_git_installed >nul 2>&1
     call :setup_repository >nul 2>&1
     call :setup_remote_if_needed >nul 2>&1
-    call :pull_latest_changes >nul 2>&1
-    call :reset_git_state >nul 2>&1
+    call :check_remote_changes >nul 2>&1
     call :setup_lfs >nul 2>&1
     call :check_file_sizes >nul 2>&1
 )
@@ -226,31 +242,7 @@ call :setup_remote_if_needed
 for /f "tokens=1-2 delims=: " %%a in ('time /t') do set current_time=%%a:%%b
 
 echo [!current_time!] Checking for remote changes...
-git fetch origin >nul 2>&1
-
-git ls-remote --heads origin main >nul 2>&1
-if not errorlevel 1 (
-    set remote_branch=main
-) else (
-    git ls-remote --heads origin master >nul 2>&1
-    if not errorlevel 1 (
-        set remote_branch=master
-    ) else (
-        echo [!current_time!] No main or master branch found. Skipping remote check.
-        goto skip_remote_check
-    )
-)
-
-git diff HEAD origin/!remote_branch! --quiet >nul 2>&1
-if errorlevel 1 (
-    echo [!current_time!] Remote changes detected. Pulling from !remote_branch!...
-    git pull origin !remote_branch! --no-edit --allow-unrelated-histories >nul 2>&1
-    if errorlevel 1 (
-        echo [!current_time!] Pull failed. Continuing with local changes...
-    ) else (
-        echo [!current_time!] Remote changes pulled successfully!
-    )
-)
+call :check_remote_changes
 
 :skip_remote_check
 call :check_file_sizes
@@ -465,7 +457,7 @@ if "!need_remote!"=="true" (
 )
 goto :eof
 
-:pull_latest_changes
+:check_remote_changes
 git config --get remote.origin.url >nul 2>&1
 if not errorlevel 1 (
     for /f "tokens=*" %%a in ('git branch --show-current') do set current_branch=%%a
@@ -485,85 +477,128 @@ if not errorlevel 1 (
         goto :eof
     )
 
-    REM Check if there are changes to pull
+    REM Check if there are changes available on remote
     git diff HEAD origin/!current_branch! --quiet >nul 2>&1
     if errorlevel 1 (
-        REM Check if this script will be updated
-        git diff HEAD origin/!current_branch! --name-only | findstr /C:"commit_to_github.bat" >nul 2>&1
-        set script_updated=!errorlevel!
+        powershell -Command "Write-Host '  [NOTICE] Remote changes available' -ForegroundColor Yellow"
+    ) else (
+        powershell -Command "Write-Host '  [OK] Already up to date with remote' -ForegroundColor Green"
+    )
+) else (
+    echo No remote origin configured. Skipping check.
+)
+goto :eof
 
+:pull_remote_changes
+call :check_git_installed
+call :setup_repository
+call :setup_lfs >nul 2>&1
+call :setup_remote_if_needed
+
+cls
+echo GitHub Auto-Monitor Script v%SCRIPT_VERSION% - Pull Changes Mode
+echo =================================================================
+echo.
+
+REM Check if remote is configured
+git config --get remote.origin.url >nul 2>&1
+if errorlevel 1 (
+    powershell -Command "Write-Host 'ERROR: No remote origin configured!' -ForegroundColor Red"
+    echo Cannot pull from remote without a configured origin.
+    echo Please configure a remote first.
+    echo.
+    echo Press any key to return to menu...
+    pause >nul
+    goto :show_menu
+)
+
+for /f "tokens=*" %%a in ('git branch --show-current') do set current_branch=%%a
+git fetch origin >nul 2>&1
+
+REM Check if we have any commits in the local repository
+git rev-parse HEAD >nul 2>&1
+if errorlevel 1 (
+    powershell -Command "Write-Host 'New repository - no remote comparison needed' -ForegroundColor Green"
+    echo.
+    echo Press any key to return to menu...
+    pause >nul
+    goto :show_menu
+)
+
+REM Check if remote branch exists
+git rev-parse origin/!current_branch! >nul 2>&1
+if errorlevel 1 (
+    powershell -Command "Write-Host 'Remote branch origin/!current_branch! not found' -ForegroundColor Yellow"
+    echo First push will create it.
+    echo.
+    echo Press any key to return to menu...
+    pause >nul
+    goto :show_menu
+)
+
+REM Check if there are changes to pull
+git diff HEAD origin/!current_branch! --quiet >nul 2>&1
+if errorlevel 1 (
+    powershell -Command "Write-Host 'Remote changes detected - pulling updates:' -ForegroundColor Yellow"
+    echo.
+
+    REM Check for uncommitted local changes that would prevent pull
+    git diff --quiet && git diff --cached --quiet
+    if errorlevel 1 (
         echo.
-        powershell -Command "Write-Host 'Remote changes detected - pulling updates:' -ForegroundColor Yellow"
+        powershell -Command "Write-Host 'Uncommitted local changes detected:' -ForegroundColor Yellow"
+        echo ========================
+        git status --porcelain
+        echo.
+        echo Stashing uncommitted changes before pull...
+        git stash push -m "Auto-stash before manual pull"
+        set "stash_created=true"
+    ) else (
+        set "stash_created=false"
+    )
 
-        REM Check for uncommitted local changes that would prevent pull
-        git diff --quiet && git diff --cached --quiet
-        if errorlevel 1 (
-            echo.
-            powershell -Command "Write-Host 'Uncommitted local changes detected:' -ForegroundColor Yellow"
-            echo ========================
-            git status --porcelain
-            echo.
-            echo Stashing uncommitted changes before pull...
-            git stash push -m "Auto-stash before pull to avoid conflicts"
-            set "stash_created=true"
-        ) else (
-            set "stash_created=false"
-        )
+    git pull origin !current_branch! --no-edit --allow-unrelated-histories --stat
 
-        git pull origin !current_branch! --no-edit --allow-unrelated-histories --stat
-
-        REM Restore stashed changes and check for conflicts
-        if "!stash_created!"=="true" (
-            echo.
-            echo Restoring stashed changes...
-            git stash pop >nul 2>&1
-            REM Check if stash pop created conflicts
-            git ls-files --unmerged | findstr . >nul 2>&1
-            if not errorlevel 1 (
-                echo.
-                powershell -Command "Write-Host 'CONFLICTS from restoring local changes!' -ForegroundColor Red"
-                echo.
-                echo Conflicted files:
-                git ls-files --unmerged | for /f "tokens=4" %%f in ('findstr /v "^$"') do echo   - %%f
-                echo.
-                goto :conflict_resolution_menu
-            )
-        )
-
-        REM Check if pull resulted in merge conflicts (only if there are actually unmerged files)
+    REM Restore stashed changes and check for conflicts
+    if "!stash_created!"=="true" (
+        echo.
+        echo Restoring stashed changes...
+        git stash pop >nul 2>&1
+        REM Check if stash pop created conflicts
         git ls-files --unmerged | findstr . >nul 2>&1
         if not errorlevel 1 (
             echo.
-            powershell -Command "Write-Host 'MERGE CONFLICTS DETECTED!' -ForegroundColor Red"
+            powershell -Command "Write-Host 'CONFLICTS from restoring local changes!' -ForegroundColor Red"
             echo.
             echo Conflicted files:
             git ls-files --unmerged | for /f "tokens=4" %%f in ('findstr /v "^$"') do echo   - %%f
             echo.
             goto :conflict_resolution_menu
         )
-
-        echo.
-        powershell -Command "Write-Host '  [OK] Remote changes synchronized' -ForegroundColor Green"
-
-        REM If script was updated, restart with new version (but only if not already restarted)
-        if !script_updated! equ 0 (
-            if "!script_restarted!"=="false" (
-                echo.
-                powershell -Command "Write-Host 'Script updated! Current: v%SCRIPT_VERSION% - Restarting with new version...' -ForegroundColor Cyan"
-                echo.
-                start "" "%~dpnx0" --restarted %*
-                exit
-            ) else (
-                powershell -Command "Write-Host '  [OK] Script restarted with latest version (v%SCRIPT_VERSION%)' -ForegroundColor Green"
-            )
-        )
-    ) else (
-        powershell -Command "Write-Host '  [OK] Already up to date with remote' -ForegroundColor Green"
     )
+
+    REM Check if pull resulted in merge conflicts
+    git ls-files --unmerged | findstr . >nul 2>&1
+    if not errorlevel 1 (
+        echo.
+        powershell -Command "Write-Host 'MERGE CONFLICTS DETECTED!' -ForegroundColor Red"
+        echo.
+        echo Conflicted files:
+        git ls-files --unmerged | for /f "tokens=4" %%f in ('findstr /v "^$"') do echo   - %%f
+        echo.
+        goto :conflict_resolution_menu
+    )
+
+    echo.
+    powershell -Command "Write-Host 'Pull completed successfully!' -ForegroundColor Green"
 ) else (
-    echo No remote origin configured. Skipping pull.
+    powershell -Command "Write-Host 'Already up to date with remote' -ForegroundColor Green"
 )
-goto :eof
+
+echo.
+echo Press any key to return to menu...
+pause >nul
+goto :show_menu
 
 :hard_reset_local
 call :check_git_installed
