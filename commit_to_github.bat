@@ -50,6 +50,7 @@ call :setup_repository
 call :setup_remote_if_needed
 call :show_repository_status
 call :check_remote_changes
+call :check_remote_changes_status
 call :setup_lfs
 call :check_file_sizes
 echo.
@@ -61,7 +62,6 @@ call :display_menu
 goto :menu_loop
 
 :display_menu
-call :check_remote_changes_status
 cls
 echo GitHub Auto-Monitor Script v%SCRIPT_VERSION%
 echo ==========================================
