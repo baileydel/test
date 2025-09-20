@@ -61,41 +61,69 @@ call :display_menu
 goto :menu_loop
 
 :display_menu
+call :check_remote_changes_status
 cls
 echo GitHub Auto-Monitor Script v%SCRIPT_VERSION%
 echo ==========================================
 echo Current directory: %CD%
+git config --get remote.origin.url >nul 2>&1
+if not errorlevel 1 (
+    for /f "tokens=*" %%a in ('git config --get remote.origin.url') do set repo_url=%%a
+    echo Repository: !repo_url!
+) else (
+    echo Repository: Not configured
+)
 echo.
 echo Select an option:
 echo.
 if "%menu_selection%"=="1" (
     powershell -Command "Write-Host '  > Commit Changes Now' -ForegroundColor Green"
     echo    Auto-Monitor Mode
-    echo    Pull Changes from Remote
+    if "%remote_changes_available%"=="true" (
+        powershell -Command "Write-Host '    Pull Changes from Remote' -ForegroundColor Blue"
+    ) else (
+        echo    Pull Changes from Remote
+    )
     echo    Hard Reset to Remote
     echo    Force Push to Remote
 ) else if "%menu_selection%"=="2" (
     echo    Commit Changes Now
     powershell -Command "Write-Host '  > Auto-Monitor Mode' -ForegroundColor Green"
-    echo    Pull Changes from Remote
+    if "%remote_changes_available%"=="true" (
+        powershell -Command "Write-Host '    Pull Changes from Remote' -ForegroundColor Blue"
+    ) else (
+        echo    Pull Changes from Remote
+    )
     echo    Hard Reset to Remote
     echo    Force Push to Remote
 ) else if "%menu_selection%"=="3" (
     echo    Commit Changes Now
     echo    Auto-Monitor Mode
-    powershell -Command "Write-Host '  > Pull Changes from Remote' -ForegroundColor Cyan"
+    if "%remote_changes_available%"=="true" (
+        powershell -Command "Write-Host '  > Pull Changes from Remote' -ForegroundColor Blue"
+    ) else (
+        powershell -Command "Write-Host '  > Pull Changes from Remote' -ForegroundColor Cyan"
+    )
     echo    Hard Reset to Remote
     echo    Force Push to Remote
 ) else if "%menu_selection%"=="4" (
     echo    Commit Changes Now
     echo    Auto-Monitor Mode
-    echo    Pull Changes from Remote
+    if "%remote_changes_available%"=="true" (
+        powershell -Command "Write-Host '    Pull Changes from Remote' -ForegroundColor Blue"
+    ) else (
+        echo    Pull Changes from Remote
+    )
     powershell -Command "Write-Host '  > Hard Reset to Remote' -ForegroundColor Red"
     echo    Force Push to Remote
 ) else (
     echo    Commit Changes Now
     echo    Auto-Monitor Mode
-    echo    Pull Changes from Remote
+    if "%remote_changes_available%"=="true" (
+        powershell -Command "Write-Host '    Pull Changes from Remote' -ForegroundColor Blue"
+    ) else (
+        echo    Pull Changes from Remote
+    )
     echo    Hard Reset to Remote
     powershell -Command "Write-Host '  > Force Push to Remote' -ForegroundColor Red"
 )
@@ -454,6 +482,28 @@ if "!need_remote!"=="true" (
     git remote add origin "!repo_url!"
     echo Remote origin added successfully.
     echo.
+)
+goto :eof
+
+:check_remote_changes_status
+set "remote_changes_available=false"
+git config --get remote.origin.url >nul 2>&1
+if not errorlevel 1 (
+    for /f "tokens=*" %%a in ('git branch --show-current') do set current_branch=%%a
+    git fetch origin >nul 2>&1
+
+    REM Check if we have any commits and remote branch exists
+    git rev-parse HEAD >nul 2>&1
+    if not errorlevel 1 (
+        git rev-parse origin/!current_branch! >nul 2>&1
+        if not errorlevel 1 (
+            REM Check if there are changes available on remote
+            git diff HEAD origin/!current_branch! --quiet >nul 2>&1
+            if errorlevel 1 (
+                set "remote_changes_available=true"
+            )
+        )
+    )
 )
 goto :eof
 
