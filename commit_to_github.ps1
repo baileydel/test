@@ -8,7 +8,7 @@ param(
 )
 
 # Script configuration
-$SCRIPT_VERSION = "1.5.8"
+$SCRIPT_VERSION = "1.5.9"
 $script:script_restarted = $Restarted
 $script:auto_mode = $false
 $script:menu_selection = 1
@@ -17,6 +17,19 @@ $script:repo_status_line = ""
 $script:repo_status_color = "Green"
 $script:repo_name = ""
 $script:current_branch = ""
+$script:mods_file_count = 0
+$script:settings_menu_selection = 1
+
+# Settings configuration
+$script:settings_file = "commit_settings.json"
+$script:settings = @{
+    auto_commit_interval = 60
+    monitor_mods_folder = $true
+    monitor_config_folder = $true
+    show_file_counts = $true
+    auto_lfs_large_files = $true
+    server_folder_path = ""
+}
 
 # Set location to script directory
 Set-Location $PSScriptRoot
@@ -24,7 +37,47 @@ Set-Location $PSScriptRoot
 # Console title
 $Host.UI.RawUI.WindowTitle = "GitHub Auto-Monitor Script"
 
+function Load-Settings {
+    if (Test-Path $script:settings_file) {
+        try {
+            $loaded_settings = Get-Content $script:settings_file | ConvertFrom-Json
+            $script:settings.auto_commit_interval = $loaded_settings.auto_commit_interval
+            $script:settings.monitor_mods_folder = $loaded_settings.monitor_mods_folder
+            $script:settings.monitor_config_folder = $loaded_settings.monitor_config_folder
+            $script:settings.show_file_counts = $loaded_settings.show_file_counts
+            $script:settings.auto_lfs_large_files = $loaded_settings.auto_lfs_large_files
+            $script:settings.server_folder_path = $loaded_settings.server_folder_path
+        }
+        catch {
+            Write-Host "Warning: Could not load settings file. Using defaults." -ForegroundColor Yellow
+        }
+    }
+}
+
+function Save-Settings {
+    try {
+        $script:settings | ConvertTo-Json | Set-Content $script:settings_file
+    }
+    catch {
+        Write-Host "Error: Could not save settings file." -ForegroundColor Red
+    }
+}
+
+function Get-ModsFileCount {
+    if (Test-Path "mods") {
+        $script:mods_file_count = (Get-ChildItem "mods" -File | Measure-Object).Count
+    } else {
+        $script:mods_file_count = 0
+    }
+}
+
 function Initialize-GitEnvironment {
+    # Load settings first
+    Load-Settings
+
+    # Count files in mods folder
+    Get-ModsFileCount
+
     # Check if Git is installed
     try {
         git --version | Out-Null
@@ -53,7 +106,7 @@ function Initialize-GitEnvironment {
         # Set basic repository status for new repos
         $script:current_branch = git branch --show-current
         $script:repo_name = ""
-        $script:repo_status_line = "Repository ready | Remote: not configured | Branch: $($script:current_branch)"
+        $script:repo_status_line = "Repository ready | Remote: not configured | Branch: $($script:current_branch) | Mods: $($script:mods_file_count) files"
         $script:repo_status_color = "Green"
         return # Don't check for remote on new repository
     }
@@ -169,12 +222,12 @@ function Initialize-GitEnvironment {
     try {
         $repo_url = git config --get remote.origin.url
         $script:repo_name = $repo_url -replace "https://github.com/", "" -replace "\.git$", ""
-        $script:repo_status_line = "Repository ready | Remote: $($script:repo_name) | Branch: $($script:current_branch)"
+        $script:repo_status_line = "Repository ready | Remote: $($script:repo_name) | Branch: $($script:current_branch) | Mods: $($script:mods_file_count) files"
         $script:repo_status_color = "Green"
     }
     catch {
         $script:repo_name = ""
-        $script:repo_status_line = "Repository ready | Remote: not configured | Branch: $($script:current_branch)"
+        $script:repo_status_line = "Repository ready | Remote: not configured | Branch: $($script:current_branch) | Mods: $($script:mods_file_count) files"
         $script:repo_status_color = "Green"
     }
 }
@@ -191,8 +244,8 @@ function Show-RepositoryStatus {
         if ($LASTEXITCODE -eq 0) {
             Write-Host "Repository " -NoNewline
             Write-Host "ready" -ForegroundColor Green -NoNewline
-            Write-Host " | Remote: $($script:repo_name) | Branch: $($script:current_branch)"
-            $script:repo_status_line = "Repository ready | Remote: $($script:repo_name) | Branch: $($script:current_branch)"
+            Write-Host " | Remote: $($script:repo_name) | Branch: $($script:current_branch) | Mods: $($script:mods_file_count) files"
+            $script:repo_status_line = "Repository ready | Remote: $($script:repo_name) | Branch: $($script:current_branch) | Mods: $($script:mods_file_count) files"
             $script:repo_status_color = "Green"
         }
         else {
@@ -223,8 +276,8 @@ function Show-RepositoryStatus {
     catch {
         Write-Host "Repository " -NoNewline
         Write-Host "ready" -ForegroundColor Green -NoNewline
-        Write-Host " | Remote: not configured | Branch: $($script:current_branch)"
-        $script:repo_status_line = "Repository ready | Remote: not configured | Branch: $($script:current_branch)"
+        Write-Host " | Remote: not configured | Branch: $($script:current_branch) | Mods: $($script:mods_file_count) files"
+        $script:repo_status_line = "Repository ready | Remote: not configured | Branch: $($script:current_branch) | Mods: $($script:mods_file_count) files"
         $script:repo_status_color = "Green"
     }
 }
@@ -233,7 +286,7 @@ function Show-CachedStatus {
     if ($script:repo_status_color -eq "Green") {
         Write-Host "Repository " -NoNewline
         Write-Host "ready" -ForegroundColor Green -NoNewline
-        Write-Host " | Remote: $($script:repo_name) | Branch: $($script:current_branch)"
+        Write-Host " | Remote: $($script:repo_name) | Branch: $($script:current_branch) | Mods: $($script:mods_file_count) files"
     }
     else {
         Write-Host "Repository " -NoNewline
@@ -481,6 +534,12 @@ function Show-Menu {
         Write-Host "    Force Push to Remote"
     }
 
+    if ($script:menu_selection -eq 6) {
+        Write-Host "  > Settings" -ForegroundColor Green
+    } else {
+        Write-Host "    Settings"
+    }
+
     Write-Host ""
     Write-Host "Use UP/DOWN arrow keys to navigate, ENTER to select, ESC to exit" -ForegroundColor Gray
 }
@@ -510,11 +569,11 @@ function Start-MenuLoop {
             }
             "UP" {
                 $script:menu_selection--
-                if ($script:menu_selection -lt 1) { $script:menu_selection = 5 }
+                if ($script:menu_selection -lt 1) { $script:menu_selection = 6 }
             }
             "DOWN" {
                 $script:menu_selection++
-                if ($script:menu_selection -gt 5) { $script:menu_selection = 1 }
+                if ($script:menu_selection -gt 6) { $script:menu_selection = 1 }
             }
         }
     } while ($true)
@@ -590,7 +649,7 @@ function Start-AutoMonitor {
         $current_time = Get-Date -Format "HH:mm"
 
         Write-Host "[$current_time] Checking for remote changes..." -ForegroundColor Cyan
-        Show-RemoteChangesStatus
+        Update-RemoteStatus -ShowOutput
 
         Test-FileSizes
         git add . 2>$null | Out-Null
@@ -887,6 +946,128 @@ function Invoke-HardReset {
     $null = $Host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")
 }
 
+function Show-SettingsMenu {
+    Clear-Host
+    Write-Host "GitHub Auto-Monitor Script v$SCRIPT_VERSION - Settings" -ForegroundColor Cyan
+    Write-Host "=====================================================" -ForegroundColor Cyan
+    Write-Host ""
+    Write-Host "Current Settings:" -ForegroundColor White
+    Write-Host ""
+
+    # Setting options with highlighting
+    if ($script:settings_menu_selection -eq 1) {
+        Write-Host "  > Auto-commit interval: $($script:settings.auto_commit_interval) seconds" -ForegroundColor Green
+    } else {
+        Write-Host "    Auto-commit interval: $($script:settings.auto_commit_interval) seconds"
+    }
+
+    if ($script:settings_menu_selection -eq 2) {
+        $status = if ($script:settings.monitor_mods_folder) { "Enabled" } else { "Disabled" }
+        Write-Host "  > Monitor mods folder: $status" -ForegroundColor Green
+    } else {
+        $status = if ($script:settings.monitor_mods_folder) { "Enabled" } else { "Disabled" }
+        Write-Host "    Monitor mods folder: $status"
+    }
+
+    if ($script:settings_menu_selection -eq 3) {
+        $status = if ($script:settings.monitor_config_folder) { "Enabled" } else { "Disabled" }
+        Write-Host "  > Monitor config folder: $status" -ForegroundColor Green
+    } else {
+        $status = if ($script:settings.monitor_config_folder) { "Enabled" } else { "Disabled" }
+        Write-Host "    Monitor config folder: $status"
+    }
+
+    if ($script:settings_menu_selection -eq 4) {
+        $status = if ($script:settings.show_file_counts) { "Enabled" } else { "Disabled" }
+        Write-Host "  > Show file counts: $status" -ForegroundColor Green
+    } else {
+        $status = if ($script:settings.show_file_counts) { "Enabled" } else { "Disabled" }
+        Write-Host "    Show file counts: $status"
+    }
+
+    if ($script:settings_menu_selection -eq 5) {
+        $status = if ($script:settings.auto_lfs_large_files) { "Enabled" } else { "Disabled" }
+        Write-Host "  > Auto-LFS large files: $status" -ForegroundColor Green
+    } else {
+        $status = if ($script:settings.auto_lfs_large_files) { "Enabled" } else { "Disabled" }
+        Write-Host "    Auto-LFS large files: $status"
+    }
+
+    if ($script:settings_menu_selection -eq 6) {
+        Write-Host "  > Save Settings" -ForegroundColor Yellow
+    } else {
+        Write-Host "    Save Settings"
+    }
+
+    if ($script:settings_menu_selection -eq 7) {
+        Write-Host "  > Back to Main Menu" -ForegroundColor Yellow
+    } else {
+        Write-Host "    Back to Main Menu"
+    }
+
+    Write-Host ""
+    Write-Host "Use UP/DOWN arrows to navigate, ENTER to select/toggle, ESC to exit" -ForegroundColor Gray
+}
+
+function Start-SettingsLoop {
+    do {
+        Show-SettingsMenu
+        $key_input = Read-MenuKey
+
+        switch ($key_input) {
+            "ENTER" {
+                switch ($script:settings_menu_selection) {
+                    1 {
+                        # Auto-commit interval
+                        $new_interval = Read-Host "Enter auto-commit interval in seconds (current: $($script:settings.auto_commit_interval))"
+                        if ($new_interval -match "^\d+$" -and [int]$new_interval -gt 0) {
+                            $script:settings.auto_commit_interval = [int]$new_interval
+                        }
+                    }
+                    2 {
+                        # Toggle monitor mods folder
+                        $script:settings.monitor_mods_folder = -not $script:settings.monitor_mods_folder
+                    }
+                    3 {
+                        # Toggle monitor config folder
+                        $script:settings.monitor_config_folder = -not $script:settings.monitor_config_folder
+                    }
+                    4 {
+                        # Toggle show file counts
+                        $script:settings.show_file_counts = -not $script:settings.show_file_counts
+                    }
+                    5 {
+                        # Toggle auto-LFS large files
+                        $script:settings.auto_lfs_large_files = -not $script:settings.auto_lfs_large_files
+                    }
+                    6 {
+                        # Save settings
+                        Save-Settings
+                        Write-Host ""
+                        Write-Host "Settings saved successfully!" -ForegroundColor Green
+                        Start-Sleep 2
+                    }
+                    7 {
+                        # Back to main menu
+                        return
+                    }
+                }
+            }
+            "ESC" {
+                return
+            }
+            "UP" {
+                $script:settings_menu_selection--
+                if ($script:settings_menu_selection -lt 1) { $script:settings_menu_selection = 7 }
+            }
+            "DOWN" {
+                $script:settings_menu_selection++
+                if ($script:settings_menu_selection -gt 7) { $script:settings_menu_selection = 1 }
+            }
+        }
+    } while ($true)
+}
+
 function Invoke-ForcePush {
     Write-Host "GitHub Auto-Monitor Script v$SCRIPT_VERSION - Force Push Mode" -ForegroundColor Cyan
     Write-Host "==============================================================" -ForegroundColor Cyan
@@ -978,9 +1159,9 @@ switch ($Mode.ToLower()) {
         Write-Host "Current directory: $(Get-Location)"
         Write-Host ""
         Show-RepositoryStatus
-        Show-RemoteChangesStatus
-        Initialize-LFS
-        Test-FileSizes
+        Update-RemoteStatus -ShowOutput
+        Initialize-LFS | Out-Null
+        Test-FileSizes | Out-Null
         Invoke-CommitProcess -Message $CommitMessage
     }
     "force-push" {
@@ -1020,6 +1201,10 @@ switch ($Mode.ToLower()) {
                 5 {
                     # Force Push to Remote
                     Invoke-ForcePush
+                }
+                6 {
+                    # Settings
+                    Start-SettingsLoop
                 }
             }
         } while ($true)
