@@ -1,0 +1,8 @@
+{
+  "auto_commit_interval": 60,
+  "monitor_mods_folder": true,
+  "monitor_config_folder": true,
+  "show_file_counts": true,
+  "auto_lfs_large_files": true,
+  "server_folder_path": "C:\\Users\\Bailey\\Desktop\\test"
+}
