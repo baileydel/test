@@ -226,16 +226,7 @@ function Show-Menu {
 }
 
 function Commit-Script {
-    $mydate = Get-Date -Format "ddd-MM-dd"
-    $mytime = Get-Date -Format "HH:mm"
-    $commit_message = "Auto commit $mydate $mytime"
-
-    # Add all files to staging (excluding those now in .gitignore)
     git add .
-
-    Write-Host "`nGit Status:"
-    git status --porcelain
-    Write-Host "`n"
 
     if (Test-LocalChangesAvailable) {
         Write-Host "Changes to be committed:"
@@ -248,6 +239,15 @@ function Commit-Script {
             Wait-ForKeyPress
             return
         }
+
+        $mydate = Get-Date -Format "ddd-MM-dd"
+        $mytime = Get-Date -Format "HH:mm"
+        $commit_message = "Auto commit $mydate $mytime"
+
+        Write-Host "`nGit Status:"
+        git status --porcelain
+        Write-Host "`n"
+
 
         git commit -m $commit_message
         Write-Host "`n"
