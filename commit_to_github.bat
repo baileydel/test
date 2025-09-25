@@ -1,2 +1,2 @@
 @echo off
-node "%~dp0commit_to_github.js" %*
+powershell -ExecutionPolicy Bypass -File "%~dp0commit_to_github.ps1" %*
