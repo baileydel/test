@@ -440,45 +440,47 @@ function Start-HardResetLocal {
 }
 
 function Start-ForcePushMode {
-    Write-Host "`nWARNING: This will FORCEFULLY OVERWRITE the remote repository!" -ForegroundColor Red
-    Write-Host "Remote will be reset to match your local changes exactly." -ForegroundColor Yellow
-    Write-Host "`nWhat will happen:"
-    Write-Host "  1. All local changes will be committed"
-    Write-Host "  2. Remote repository will be force-pushed to match local"
-    Write-Host "  3. Any remote changes not in local will be LOST FOREVER`n"
+    if (Test-LocalChangesAvailable) {
+        Write-Host "`nWARNING: This will FORCEFULLY OVERWRITE the remote repository!" -ForegroundColor Red
+        Write-Host "Remote will be reset to match your local changes exactly." -ForegroundColor Yellow
+        Write-Host "`nWhat will happen:"
+        Write-Host "  1. All local changes will be committed"
+        Write-Host "  2. Remote repository will be force-pushed to match local"
+        Write-Host "  3. Any remote changes not in local will be LOST FOREVER`n"
 
-    $confirm = Read-Host "Type 'FORCE' to confirm force push (anything else cancels)"
+        $confirm = Read-Host "Type 'FORCE' to confirm force push (anything else cancels)"
 
-    if ($confirm -ne "FORCE") {
-        Write-Host "`nForce push cancelled."
+        if ($confirm -ne "FORCE") {
+            Write-Host "`nForce push cancelled."
+            Wait-ForKeyPress
+            return
+        }
+
+        Write-Host "`nPerforming force push...`n"
+        Write-Host "Adding all local changes...`n"
+        git add .
+
+        $mydate = Get-Date -Format "ddd-MM-dd"
+        $mytime = Get-Date -Format "HH:mm"
+        git commit -m "Force push commit $mydate $mytime"
+
+        # Get current branch
+        $current_branch = git branch --show-current
+
+        Write-Host "Force pushing to origin/$current_branch..."
+        git push origin $current_branch --force
+
+        if ($LASTEXITCODE -ne 0) {
+            Write-Host "`nForce push failed! Check the error messages above." -ForegroundColor Red
+            Wait-ForKeyPress
+            return
+        }
+
+        Write-Host "`nForce push completed successfully!" -ForegroundColor Green
+        Write-Host "Remote repository now matches your local changes exactly!" -ForegroundColor Green
+
         Wait-ForKeyPress
-        return
     }
-
-    Write-Host "`nPerforming force push...`n"
-    Write-Host "Adding all local changes...`n"
-    git add .
-
-    $mydate = Get-Date -Format "ddd-MM-dd"
-    $mytime = Get-Date -Format "HH:mm"
-    git commit -m "Force push commit $mydate $mytime"
-
-    # Get current branch
-    $current_branch = git branch --show-current
-
-    Write-Host "Force pushing to origin/$current_branch..."
-    git push origin $current_branch --force
-
-    if ($LASTEXITCODE -ne 0) {
-        Write-Host "`nForce push failed! Check the error messages above." -ForegroundColor Red
-        Wait-ForKeyPress
-        return
-    }
-
-    Write-Host "`nForce push completed successfully!" -ForegroundColor Green
-    Write-Host "Remote repository now matches your local changes exactly!" -ForegroundColor Green
-
-    Wait-ForKeyPress
 }
 
 function Start-Script {
