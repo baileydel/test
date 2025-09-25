@@ -281,17 +281,13 @@ $script:menu_items = @(
 
 function Start-PullRemoteChanges {
     $current_branch = git branch --show-current
+
     git fetch origin 2>$null
 
-    # Check if there are changes to pull
-    git diff HEAD "origin/$current_branch" --quiet 2>$null
-    if ($LASTEXITCODE -ne 0) {
-        Write-Host "Remote changes detected:" -ForegroundColor Yellow
-
+    if (Test-RemoteChangesAvailable) {
         # Show what changes are available
         Write-Host "`nChanges available from remote:"
         git log HEAD..origin/$current_branch --oneline --max-count=5
-
 
         $confirm_pull = Read-Host "`nDo you want to pull these changes? (y/n)"
         if ($confirm_pull -ne "y" -and $confirm_pull -ne "Y") {
@@ -354,86 +350,92 @@ function Start-PullRemoteChanges {
 }
 
 function Start-HardResetLocal {
-    Write-Host "`nWARNING: This will PERMANENTLY DELETE all local changes!" -ForegroundColor Red
-    Write-Host "Your local repository will be reset to match the remote exactly." -ForegroundColor Yellow
-    Write-Host "`nWhat will happen:"
-    Write-Host "  1. All uncommitted changes will be lost"
-    Write-Host "  2. All local commits not on remote will be lost"
-    Write-Host "  3. Working directory will match remote branch exactly`n"
+    if (Test-RemoteChangesAvailable) {
+        Write-Host "`nWARNING: This will PERMANENTLY DELETE all local changes!" -ForegroundColor Red
+        Write-Host "Your local repository will be reset to match the remote exactly." -ForegroundColor Yellow
+        Write-Host "`nWhat will happen:"
+        Write-Host "  1. All uncommitted changes will be lost"
+        Write-Host "  2. All local commits not on remote will be lost"
+        Write-Host "  3. Working directory will match remote branch exactly`n"
 
-    # Determine which branch to reset to
-    $current_branch = git branch --show-current
-    git rev-parse "origin/$current_branch" 2>$null
-    if ($LASTEXITCODE -ne 0) {
-        # Try main branch if current branch doesn't exist on remote
-        git rev-parse "origin/main" 2>$null
-        if ($LASTEXITCODE -eq 0) {
-            $reset_branch = "main"
-            Write-Host "Note: Current branch ($current_branch) not found on remote." -ForegroundColor Yellow
-            Write-Host "Will reset to origin/main instead."
-        } else {
-            # Try master branch
-            git rev-parse "origin/master" 2>$null
+        # Determine which branch to reset to
+        $current_branch = git branch --show-current
+        git rev-parse "origin/$current_branch" 2>$null
+        if ($LASTEXITCODE -ne 0) {
+            # Try main branch if current branch doesn't exist on remote
+            git rev-parse "origin/main" 2>$null
             if ($LASTEXITCODE -eq 0) {
-                $reset_branch = "master"
+                $reset_branch = "main"
                 Write-Host "Note: Current branch ($current_branch) not found on remote." -ForegroundColor Yellow
-                Write-Host "Will reset to origin/master instead."
+                Write-Host "Will reset to origin/main instead."
             } else {
-                Write-Host "ERROR: No suitable remote branch found!" -ForegroundColor Red
-                Write-Host "Cannot determine which remote branch to reset to."
-                Wait-ForKeyPress
-                return
+                # Try master branch
+                git rev-parse "origin/master" 2>$null
+                if ($LASTEXITCODE -eq 0) {
+                    $reset_branch = "master"
+                    Write-Host "Note: Current branch ($current_branch) not found on remote." -ForegroundColor Yellow
+                    Write-Host "Will reset to origin/master instead."
+                } else {
+                    Write-Host "ERROR: No suitable remote branch found!" -ForegroundColor Red
+                    Write-Host "Cannot determine which remote branch to reset to."
+                    Wait-ForKeyPress
+                    return
+                }
             }
+        } else {
+            $reset_branch = $current_branch
         }
-    } else {
-        $reset_branch = $current_branch
-    }
 
-    Write-Host "`nReady to reset to origin/$reset_branch!" -ForegroundColor Cyan
-    $confirm = Read-Host "`nType 'RESET' to confirm (anything else cancels)"
+        Write-Host "`nReady to reset to origin/$reset_branch!" -ForegroundColor Cyan
+        $confirm = Read-Host "`nType 'RESET' to confirm (anything else cancels)"
 
-    if ($confirm -ne "RESET") {
-        Write-Host "`nReset cancelled."
+        if ($confirm -ne "RESET") {
+            Write-Host "`nReset cancelled."
+            Wait-ForKeyPress
+            return
+        }
+
+        Write-Host "`nPerforming hard reset...`n"
+
+        # Abort any ongoing merge/rebase
+        git merge --abort 2>$null
+        git rebase --abort 2>$null
+
+        # Clean working directory
+        Write-Host "Cleaning working directory..."
+        git clean -fd
+        git reset --hard HEAD
+
+        # Switch to target branch and reset
+        Write-Host "Switching to $reset_branch branch..."
+        git checkout $reset_branch 2>$null
+        if ($LASTEXITCODE -ne 0) {
+            Write-Host "Creating $reset_branch branch from origin/$reset_branch..."
+            git checkout -b $reset_branch "origin/$reset_branch"
+        }
+
+        # Hard reset to remote
+        Write-Host "Resetting to origin/$reset_branch..."
+        git reset --hard "origin/$reset_branch"
+
+        # Clean any remaining untracked files
+        git clean -fd
+
+        Write-Host "`nHard reset completed successfully!" -ForegroundColor Green
+        Write-Host "Local repository now matches origin/$reset_branch!" -ForegroundColor Green
+        Write-Host "`nRepository status:"
+        $status = git status --porcelain
+        if (-not $status) {
+            Write-Host "  Working directory is clean"
+        } else {
+            git status --porcelain
+        }
+
         Wait-ForKeyPress
-        return
     }
-
-    Write-Host "`nPerforming hard reset...`n"
-
-    # Abort any ongoing merge/rebase
-    git merge --abort 2>$null
-    git rebase --abort 2>$null
-
-    # Clean working directory
-    Write-Host "Cleaning working directory..."
-    git clean -fd
-    git reset --hard HEAD
-
-    # Switch to target branch and reset
-    Write-Host "Switching to $reset_branch branch..."
-    git checkout $reset_branch 2>$null
-    if ($LASTEXITCODE -ne 0) {
-        Write-Host "Creating $reset_branch branch from origin/$reset_branch..."
-        git checkout -b $reset_branch "origin/$reset_branch"
+    else {
+        Write-Host "Local repository is already up to date." -ForegroundColor Yellow
     }
-
-    # Hard reset to remote
-    Write-Host "Resetting to origin/$reset_branch..."
-    git reset --hard "origin/$reset_branch"
-
-    # Clean any remaining untracked files
-    git clean -fd
-
-    Write-Host "`nHard reset completed successfully!" -ForegroundColor Green
-    Write-Host "Local repository now matches origin/$reset_branch!" -ForegroundColor Green
-    Write-Host "`nRepository status:"
-    $status = git status --porcelain
-    if (-not $status) {
-        Write-Host "  Working directory is clean"
-    } else {
-        git status --porcelain
-    }
-
     Wait-ForKeyPress
 }
 
