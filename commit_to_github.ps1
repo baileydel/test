@@ -229,8 +229,8 @@ function Commit-Script {
     git add .
 
     if (Test-LocalChangesAvailable) {
-        Write-Host "Changes to be committed:"
-        git diff --staged --name-only
+        Write-Host "`nGit Status:"
+        git status --porcelain
         Write-Host "`n"
 
         $confirm_commit = Read-Host "Do you want to commit these changes? (y/n)"
@@ -244,13 +244,7 @@ function Commit-Script {
         $mytime = Get-Date -Format "HH:mm"
         $commit_message = "Auto commit $mydate $mytime"
 
-        Write-Host "`nGit Status:"
-        git status --porcelain
-        Write-Host "`n"
-
-
         git commit -m $commit_message
-        Write-Host "`n"
 
         $current_branch = git branch --show-current
         git push -u origin $current_branch
@@ -270,7 +264,6 @@ function Commit-Script {
             Wait-ForKeyPress
             return
         }
-
         Write-Host "`nCommit completed successfully!" -ForegroundColor Green
     } else {
         Write-Host "No changes to commit."
