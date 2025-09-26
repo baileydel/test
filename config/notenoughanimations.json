@@ -1,6 +1,6 @@
 {
-  "configVersion": 11,
-  "animationSmoothingSpeed": 0.2,
+  "configVersion": 10,
+  "animationSmoothingSpeed": 0.1,
   "holdingItems": [
     "quad-mstv-mtv:pale_oak_torch",
     "quad-mstv-mtv:bamboo_torch",
@@ -74,13 +74,6 @@
   "enableInWorldBookRendering": false,
   "disableLegSmoothing": false,
   "bowAnimation": "CUSTOM_V1",
-<<<<<<< HEAD
   "customBowRotationLock": false,
-=======
-<<<<<<< HEAD
-  "customBowRotationLock": false,
-=======
->>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
->>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
   "burningAnimation": true
 }

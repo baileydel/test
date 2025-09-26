@@ -10,8 +10,18 @@ Wind {
     # Defines maximum wind strength. [range: 0 ~ 30, default: 10]
     I:maxStrength=10
 
-    # Random seed [range: -2147483648 ~ 2147483647, default: 1208129917]
-    I:randomSeed=1208129917
+<<<<<<< HEAD
+    # Random seed [range: -2147483648 ~ 2147483647, default: -1557175175]
+    I:randomSeed=-1557175175
+=======
+<<<<<<< HEAD
+    # Random seed [range: -2147483648 ~ 2147483647, default: -1557175175]
+    I:randomSeed=-1557175175
+=======
+    # Random seed [range: -2147483648 ~ 2147483647, default: 1455953433]
+    I:randomSeed=1455953433
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
 
     # Defines the wind direction.
     # Possible values: RANDOM, NORTH, SOUTH, WEST, EAST, PLAYER, SPAWN

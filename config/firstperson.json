@@ -5,7 +5,7 @@
   "sneakXOffset": 0,
   "sitXOffset": 0,
   "renderStuckFeatures": true,
-  "vanillaHandsMode": "ALL",
+  "vanillaHandsMode": "OFF",
   "dynamicMode": true,
   "vanillaHandsSkipSwimming": true,
   "autoVanillaHands": [
@@ -16,17 +16,7 @@
     "twilightforest:filled_magic_map",
     "twilightforest:filled_maze_map",
     "antiqueatlas:antique_atlas",
-<<<<<<< HEAD
     "create:extendo_grip"
-=======
-<<<<<<< HEAD
-    "create:extendo_grip"
-=======
-    "create:extendo_grip",
-    "minecraft:filled_map",
-    "minecraft:map"
->>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
->>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
   ],
   "autoToggleModItems": [
     "exposure:camera"

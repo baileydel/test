@@ -324,7 +324,6 @@ function Pull-Changes {
 
     if (-not (Test-RemoteChangesAvailable)) {
         Write-Host "Already up to date with remote" -ForegroundColor Green
-        Wait-ForKeyPress
         return
     }
 
@@ -407,80 +406,10 @@ function Pull-Changes {
 
 $script:menu_items = @(
     @{ Title = "Commit Changes Now"; Action = { Commit-Script }; Color = "Green" },
-    @{ Title = "Pull Changes from Remote"; Action = { Start-PullRemoteChanges }; Color = "Cyan" },
+    @{ Title = "Pull Changes from Remote"; Action = { Pull-Changes }; Color = "Cyan" },
     @{ Title = "Hard Reset to Remote"; Action = { Start-HardResetLocal }; Color = "Red" },
     @{ Title = "Force Push to Remote"; Action = { Start-ForcePushMode }; Color = "Red" }
 )
-
-function Start-PullRemoteChanges {
-    $current_branch = git branch --show-current
-    git fetch origin 2>$null
-
-    if (Test-RemoteChangesAvailable) {
-        # Show what changes are available
-        Write-Host "`nChanges available from remote:"
-        git log HEAD..origin/$current_branch --oneline --max-count=5
-
-        $confirm_pull = Read-Host "`nDo you want to pull these changes? (y/n)"
-        if ($confirm_pull -ne "y" -and $confirm_pull -ne "Y") {
-            Write-Host "Pull cancelled."
-            Wait-ForKeyPress
-            return
-        }
-
-        Write-Host "`nPulling updates:" -ForegroundColor Yellow
-        Write-Host "`n"
-
-        # Check for uncommitted local changes that would prevent pull
-        git diff --quiet
-        $diff_result = $LASTEXITCODE
-        git diff --cached --quiet
-        $cached_diff_result = $LASTEXITCODE
-
-        if (Test-LocalChangesAvailable) {
-            Write-Host "`nUncommitted local changes detected:" -ForegroundColor Yellow
-            Write-Host "========================"
-            git status --porcelain
-            Write-Host "`nStashing uncommitted changes before pull..."
-            git stash push -m "Auto-stash before manual pull"
-            $stash_created = $true
-        } else {
-            $stash_created = $false
-        }
-
-        git pull origin $current_branch --no-edit --allow-unrelated-histories --stat
-
-        # Restore stashed changes and check for conflicts
-        if ($stash_created) {
-            Write-Host "`nRestoring stashed changes..."
-            git stash pop 2>$null
-            # Check if stash pop created conflicts
-            $conflict_files = git ls-files --unmerged
-            if ($conflict_files) {
-                Write-Host "`nCONFLICTS from restoring local changes!" -ForegroundColor Red
-                Write-Host "Please resolve conflicts manually and run the script again."
-                Wait-ForKeyPress
-                return
-            }
-        }
-
-        # Check if pull resulted in merge conflicts
-        $conflict_files = git ls-files --unmerged
-        if ($conflict_files) {
-            Write-Host "`nMERGE CONFLICTS DETECTED!" -ForegroundColor Red
-            Write-Host "Please resolve conflicts manually and run the script again."
-            Wait-ForKeyPress
-            return
-        }
-
-        Write-Host "`nPull completed successfully!" -ForegroundColor Green
-    } 
-    else {
-        Write-Host "Already up to date with remote" -ForegroundColor Green
-    }
-
-    Wait-ForKeyPress
-}
 
 function Start-HardResetLocal {
     if (Test-LocalChangesAvailable or Test-RemoteChangesAvailable) {
