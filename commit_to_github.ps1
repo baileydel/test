@@ -264,6 +264,9 @@ function Show-Menu {
 
 function Commit-Script {    
     if (Test-LocalChangesAvailable) {
+
+        Pull-Changes
+
         git add .
 
         Write-Host "`nGit Status:"
@@ -308,6 +311,93 @@ function Commit-Script {
     } 
     else {
         Write-Host "No changes to commit."
+    }
+
+    Wait-ForKeyPress
+}
+
+function Pull-Changes {
+    $current_branch = git branch --show-current
+    git fetch origin 2>$null
+
+    if (-not (Test-RemoteChangesAvailable)) {
+        Write-Host "Already up to date with remote" -ForegroundColor Green
+        Wait-ForKeyPress
+        return
+    }
+
+    # Show remote changes
+    Write-Host "`nChanges available from remote:"
+    git rev-parse HEAD 2>$null
+    if ($LASTEXITCODE -eq 0) {
+        git log HEAD..origin/$current_branch --oneline --name-status
+    } else {
+        git log origin/$current_branch --oneline --name-status --max-count=1
+    }
+
+    # Check if pull would be blocked by uncommitted changes
+    $would_conflict = Test-LocalChangesAvailable
+
+    if ($would_conflict) {
+        Write-Host "`nLocal uncommitted changes detected that may conflict." -ForegroundColor Yellow
+        Write-Host "Choose how to handle:" -ForegroundColor Cyan
+        Write-Host "1. Stash local changes, pull, then restore (recommended)" -ForegroundColor Green
+        Write-Host "2. Keep remote changes, discard local changes" -ForegroundColor Red
+        Write-Host "3. Cancel pull" -ForegroundColor Gray
+
+        $choice = Read-Host "Enter choice (1/2/3)"
+
+        switch ($choice) {
+            "1" {
+                # Stash and restore
+                Write-Host "Stashing local changes..." -ForegroundColor Yellow
+                git stash push -m "Auto-stash before pull"
+
+                git pull origin $current_branch --no-edit --allow-unrelated-histories
+
+                Write-Host "Restoring local changes..." -ForegroundColor Yellow
+                git stash pop 2>$null
+
+                $conflict_files = git ls-files --unmerged
+                if ($conflict_files) {
+                    Write-Host "CONFLICTS detected after restoring changes!" -ForegroundColor Red
+                    Write-Host "Please resolve conflicts manually." -ForegroundColor Red
+                }
+            }
+            "2" {
+                # Discard local changes
+                Write-Host "Discarding local changes..." -ForegroundColor Red
+                git reset --hard HEAD
+                git clean -fd
+                git pull origin $current_branch --no-edit --allow-unrelated-histories
+            }
+            "3" {
+                Write-Host "Pull cancelled." -ForegroundColor Gray
+                Wait-ForKeyPress
+                return
+            }
+            default {
+                Write-Host "Invalid choice. Pull cancelled." -ForegroundColor Red
+                Wait-ForKeyPress
+                return
+            }
+        }
+    } else {
+        # Clean pull
+        $confirm = Read-Host "`nPull these changes? (y/n)"
+        if ($confirm -eq "y" -or $confirm -eq "Y") {
+            git pull origin $current_branch --no-edit --allow-unrelated-histories
+        } else {
+            Write-Host "Pull cancelled."
+            Wait-ForKeyPress
+            return
+        }
+    }
+
+    if ($LASTEXITCODE -eq 0) {
+        Write-Host "`nPull completed successfully!" -ForegroundColor Green
+    } else {
+        Write-Host "`nPull failed. Check error messages above." -ForegroundColor Red
     }
 
     Wait-ForKeyPress
