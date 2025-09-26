@@ -1,5 +1,9 @@
 #If enabled, a button to the Diet GUI appears in player inventories.
+<<<<<<< HEAD
 addButton = true
+=======
+addButton = false
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
 #The x-position of the Diet GUI button in player inventories.
 #Range: -10000 ~ 10000
 buttonX = 126

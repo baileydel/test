@@ -55,6 +55,14 @@
   "enchantableblocks": {
     "enchantments": true
   },
+<<<<<<< HEAD
+=======
+  "minecolonies_compatibility": {
+    "crop.age": true,
+    "postbox.requested": true,
+    "stash.requested": true
+  },
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
   "bonsaitrees3": {
     "bonsaipot": true
   },

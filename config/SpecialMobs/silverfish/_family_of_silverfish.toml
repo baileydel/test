@@ -69,7 +69,11 @@
   general.weight.desiccated.exceptions = [
     "300.0 dimension_property ultrawarm",
     "300.0 dimension_property natural & rainfall = 0.0",
+<<<<<<< HEAD
     "7.5 biome_tag #forge:is_water",
+=======
+    "7.5",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
     "7.5 rainfall > 0.85",
     "7.5 weather rain & position can_see_sky",
     "150.0 moon_brightness < 0.5"
@@ -87,12 +91,20 @@
     "7.5 biome minecraft:deep_frozen_ocean"
   ]
   general.weight.fishing.exceptions = [
+<<<<<<< HEAD
     "300.0 biome_tag #forge:is_water",
+=======
+    "300.0",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
     "150.0 moon_phase full",
     "150.0 weather rain & rainfall != 0.0"
   ]
   general.weight.flying.exceptions = [
+<<<<<<< HEAD
     "300.0 biome_tag #forge:is_mountain",
+=======
+    "300.0",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
     "300.0 y_from_sea >= 25",
     "150.0 moon_phase new",
     "15.0 y_from_sea < 0"
@@ -107,7 +119,11 @@
   general.weight.puffer.exceptions = [
     "7.5 dimension_property ultrawarm",
     "7.5 dimension_property natural & rainfall = 0.0",
+<<<<<<< HEAD
     "300.0 biome_tag #forge:is_water",
+=======
+    "300.0",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
     "300.0 rainfall > 0.85",
     "300.0 weather rain & position can_see_sky",
     "150.0 moon_brightness > 0.5"

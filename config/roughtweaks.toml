@@ -3,10 +3,17 @@
 [General]
 	#Chance 1 in X that a hostile entity drops either salve, a plaster or a bandage\nSet this to 0 if you want to disable entity drops
 	#Range: 0 ~ 32767
+<<<<<<< HEAD
 	dropChance = 30
 	#Amount of half hearts sleeping heals. Set to 0 to disable this feature
 	#Range: 0.0 ~ 32767.0
 	sleepHealAmount = 4.0
+=======
+	dropChance = 25
+	#Amount of half hearts sleeping heals. Set to 0 to disable this feature
+	#Range: 0.0 ~ 32767.0
+	sleepHealAmount = 0
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
 	#Set to true if you want to regenerate health without the use of healing items
 	healthRegen = false
 
@@ -17,21 +24,33 @@
 	salveHealCount = 4
 	#Use count for the plaster item
 	#Range: > 0
+<<<<<<< HEAD
 	plasterHealCount = 4
 	#Use count for the bandage item
 	#Range: > 0
 	bandageHealCount = 6
+=======
+	plasterHealCount = 8
+	#Use count for the bandage item
+	#Range: > 0
+	bandageHealCount = 12
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
 	#Use count for the medkit item
 	#Range: > 0
 	medkitHealCount = 16
 	#Use count for the enchanted medkit item
 	#Range: > 0
+<<<<<<< HEAD
 	medkitEnchantedHealCount = 16
+=======
+	medkitEnchantedHealCount = 24
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
 
 #Defines how much health the item restores on rightclick.
 [HealAmount]
 	#Salve heal amount
 	#Range: 1.0 ~ 1.7976931348623157E308
+<<<<<<< HEAD
 	salveHealAmount = 1.0
 	#Salve heal amount
 	#Range: 1.0 ~ 1.7976931348623157E308
@@ -45,6 +64,21 @@
 	#Salve heal amount
 	#Range: 1.0 ~ 1.7976931348623157E308
 	medkitEnchantedHealAmount = 3.0
+=======
+	salveHealAmount = 1.5
+	#Salve heal amount
+	#Range: 1.0 ~ 1.7976931348623157E308
+	plasterHealAmount = 1.5
+	#Salve heal amount
+	#Range: 1.0 ~ 1.7976931348623157E308
+	bandageHealAmount = 2.0
+	#Salve heal amount
+	#Range: 1.0 ~ 1.7976931348623157E308
+	medkitHealAmount = 6.0
+	#Salve heal amount
+	#Range: 1.0 ~ 1.7976931348623157E308
+	medkitEnchantedHealAmount = 8.0
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
 
 #Defines how long it takes for a healing item to get used.
 [HealTime]

@@ -1,5 +1,6 @@
 type = customizablemenus
 
+<<<<<<< HEAD
 com.github.alexthe666.iceandfire.client.gui.IceAndFireMainMenu {
 }
 
@@ -21,3 +22,23 @@ lain.mods.cos.impl.client.gui.GuiCosArmorInventory {
 net.minecraft.client.gui.screens.PauseScreen {
 }
 
+=======
+net.minecraft.client.gui.screens.TitleScreen {
+}
+
+net.minecraft.client.gui.screens.PauseScreen {
+}
+
+net.minecraft.client.gui.screens.inventory.InventoryScreen {
+}
+
+net.minecraft.client.gui.screens.OptionsScreen {
+}
+
+com.github.alexthe666.iceandfire.client.gui.IceAndFireMainMenu {
+}
+
+de.keksuccino.drippyloadingscreen.customization.DrippyOverlayScreen {
+}
+
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a

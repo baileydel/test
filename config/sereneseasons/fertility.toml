@@ -2,6 +2,11 @@
 [general]
 	#Whether crops are affected by seasons.
 	seasonal_crops = true
+<<<<<<< HEAD
+=======
+	#Whether to include tooltips on crops listing which seasons they're fertile in. Note: This only applies to listed crops.
+	crop_tooltips = true
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
 	#How crops behave when out of season.
 	#0 = Grow slowly
 	#1 = Can't grow
@@ -9,6 +14,9 @@
 	out_of_season_crop_behavior = 0
 	#Maximum height level for out of season crops to have fertility underground.
 	underground_fertility_level = 48
+<<<<<<< HEAD
 	#Whether to include tooltips on crops listing which seasons they're fertile in. Note: This only applies to listed crops.
 	crop_tooltips = true
+=======
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
 

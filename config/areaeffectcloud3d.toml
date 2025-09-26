@@ -2,5 +2,9 @@
 #No more boring flat Area of Effect Clouds
 ["Area Effect Cloud 3D"]
 	#If true, vanilla Area of Effect Clouds will be replaced with 3D versions of them
+<<<<<<< HEAD
 	"Replace vanilla area effect clouds" = true
+=======
+	"Replace vanilla area effect clouds" = false
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
 

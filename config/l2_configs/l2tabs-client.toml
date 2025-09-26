@@ -1,9 +1,17 @@
 #Show inventory tabs
+<<<<<<< HEAD
 showTabs = false
 #Show inventory tabs only in curio page. Only works when showTabs is true and curio is installed.
 showTabsOnlyCurio = false
 #Redirect Inventory Tab to Curios Inventory
 redirectInventoryTabToCuriosInventory = false
+=======
+showTabs = true
+#Show inventory tabs only in curio page. Only works when showTabs is true and curio is installed.
+showTabsOnlyCurio = false
+#Redirect Inventory Tab to Curios Inventory
+redirectInventoryTabToCuriosInventory = true
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
 #Number of attribure lines per page
 #Range: 1 ~ 100
 attributeLinePerPage = 15

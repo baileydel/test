@@ -6,6 +6,11 @@
   "alekiships:note_block": null,
   "balm:jade": null,
   "bonsaitrees3:bonsaipot": null,
+<<<<<<< HEAD
+=======
+  "camerapture:picture_frame": null,
+  "champions:enable_affix_compact": null,
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
   "corpse:corpse": null,
   "dynamictrees:branch": null,
   "dynamictrees:fruit": null,
@@ -13,11 +18,23 @@
   "dynamictrees:rooty": null,
   "dynamictrees:rooty_water": null,
   "enchantableblocks:enchantments": null,
+<<<<<<< HEAD
+=======
+  "fossil:feeder_status": null,
+  "fossil:prehistoric_breeding": null,
+  "fossil:prehistoric_growth": null,
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
   "jade:block_face": null,
   "jade:distance": null,
   "jade:mod_name": null,
   "jade:object_name": null,
   "jade:registry_name": null,
+<<<<<<< HEAD
+=======
+  "minecolonies_compatibility:crop.age": null,
+  "minecolonies_compatibility:postbox.requested": null,
+  "minecolonies_compatibility:stash.requested": null,
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
   "minecraft:animal_owner": null,
   "minecraft:armor_stand": null,
   "minecraft:beehive": null,
@@ -60,7 +77,17 @@
   "minecraft:villager_profession": null,
   "minecraft:waxed": null,
   "minecraft:zombie_villager": null,
+<<<<<<< HEAD
   "supplementaries:hat_stand": null,
   "supplementaries:present": null,
   "supplementaries:safe": null
+=======
+  "mysti:centaur": null,
+  "mysti:sea_serpent": null,
+  "spawn:octopus_chest_lock": null,
+  "supplementaries:hat_stand": null,
+  "supplementaries:present": null,
+  "supplementaries:safe": null,
+  "waystones:waystone": null
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
 }

@@ -18,4 +18,9 @@
 # Allow the commit script
 !commit_to_github.bat
 !commit_to_github.ps1
+<<<<<<< HEAD
 !.gitignore
+=======
+!commit_settings.json
+!.gitignore
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a

@@ -1,4 +1,5 @@
 $SCRIPT_VERSION = "1.5.7"
+<<<<<<< HEAD
 
 $script:menu_selection = 1
 $script:need_remote = $false
@@ -7,6 +8,11 @@ $script:repo_url = ""
 $script:current_br = ""
 $script:status = ""
 
+=======
+$script:menu_selection = 1
+$script:need_remote = $false
+
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
 # Set console title
 $Host.UI.RawUI.WindowTitle = "GitHub Script v$SCRIPT_VERSION"
 
@@ -19,7 +25,10 @@ if ($script_restarted) {
 function Wait-ForKeyPress {
     param([string]$Message = "Press any key to continue...")
     Write-Host $Message
+<<<<<<< HEAD
     Update-Status
+=======
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
     $Host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown") | Out-Null
 }
 
@@ -51,11 +60,18 @@ function Initialize-Repository {
         $script:need_remote = $true
     } else {
         git branch -M main 2>$null | Out-Null
+<<<<<<< HEAD
         $script:repo_url = git config --get remote.origin.url 2>$null
         if ($LASTEXITCODE -ne 0) {
             $script:need_remote = $true
         } 
         else {
+=======
+        git config --get remote.origin.url 2>$null | Out-Null
+        if ($LASTEXITCODE -ne 0) {
+            $script:need_remote = $true
+        } else {
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
             $script:need_remote = $false
         }
     }
@@ -155,6 +171,7 @@ function Test-FileSizes {
     }
 }
 
+<<<<<<< HEAD
 function Test-PullConflicts {
     param([string]$current_branch = (git branch --show-current))
 
@@ -198,15 +215,22 @@ function Test-PullConflicts {
 
 function Test-RemoteChangesAvailable {
     $script:current_br = $current_branch = git branch --show-current
+=======
+function Test-RemoteChangesAvailable {
+    $current_branch = git branch --show-current
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
     git fetch origin 2>$null
     git diff HEAD "origin/$current_branch" --quiet 2>$null
     return ($LASTEXITCODE -ne 0)
 }
 
 function Test-LocalChangesAvailable {
+<<<<<<< HEAD
     #Add any possible changes
     git add .
 
+=======
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
     git diff --quiet
     $diff_result = $LASTEXITCODE
     git diff --cached --quiet
@@ -214,6 +238,7 @@ function Test-LocalChangesAvailable {
     return (($diff_result -ne 0) -or ($cached_diff_result -ne 0))
 }
 
+<<<<<<< HEAD
 function Update-Status {
     $has_remote_changes = Test-RemoteChangesAvailable
     $has_local_changes = Test-LocalChangesAvailable
@@ -249,6 +274,13 @@ function Show-MenuDisplay {
     Clear-Host
     Write-Host "Current directory: $(Get-Location)`n"
     Show-Status
+=======
+function Show-MenuDisplay {
+    param($status_line)
+    Clear-Host
+    Write-Host "Current directory: $(Get-Location)"
+    Write-Host $status_line
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
 
     for ($i = 0; $i -lt $script:menu_items.Count; $i++) {
         $item = $script:menu_items[$i]
@@ -306,7 +338,13 @@ function Show-Menu {
     Start-MenuLoop $status_line
 }
 
+<<<<<<< HEAD
 function Commit-Script {   
+=======
+function Commit-Script {
+    git add .
+
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
     if (Test-LocalChangesAvailable) {
         Write-Host "`nGit Status:"
         git status --porcelain
@@ -324,10 +362,15 @@ function Commit-Script {
         $commit_message = "Auto commit $mydate $mytime"
 
         git commit -m $commit_message
+<<<<<<< HEAD
         Write-Host "`n"
 
         $current_branch = git branch --show-current
 
+=======
+
+        $current_branch = git branch --show-current
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
         git push -u origin $current_branch
         if ($LASTEXITCODE -ne 0) {
             Write-Host "Push failed. Attempting to pull and merge remote changes..."
@@ -345,10 +388,15 @@ function Commit-Script {
             Wait-ForKeyPress
             return
         }
+<<<<<<< HEAD
 
         Write-Host "`nCommit completed successfully!" -ForegroundColor Green
     } 
     else {
+=======
+        Write-Host "`nCommit completed successfully!" -ForegroundColor Green
+    } else {
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
         Write-Host "No changes to commit."
     }
 
@@ -364,14 +412,22 @@ $script:menu_items = @(
 
 function Start-PullRemoteChanges {
     $current_branch = git branch --show-current
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
     git fetch origin 2>$null
 
     if (Test-RemoteChangesAvailable) {
         # Show what changes are available
         Write-Host "`nChanges available from remote:"
+<<<<<<< HEAD
         git log origin/$current_branch --oneline --name-status --max-count=5 
 
         Test-PullConflicts
+=======
+        git log HEAD..origin/$current_branch --oneline --max-count=5
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
 
         $confirm_pull = Read-Host "`nDo you want to pull these changes? (y/n)"
         if ($confirm_pull -ne "y" -and $confirm_pull -ne "Y") {
@@ -426,8 +482,12 @@ function Start-PullRemoteChanges {
         }
 
         Write-Host "`nPull completed successfully!" -ForegroundColor Green
+<<<<<<< HEAD
     } 
     else {
+=======
+    } else {
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
         Write-Host "Already up to date with remote" -ForegroundColor Green
     }
 
@@ -435,7 +495,11 @@ function Start-PullRemoteChanges {
 }
 
 function Start-HardResetLocal {
+<<<<<<< HEAD
     if (Test-LocalChangesAvailable or Test-RemoteChangesAvailable) {
+=======
+    if (Test-RemoteChangesAvailable) {
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
         Write-Host "`nWARNING: This will PERMANENTLY DELETE all local changes!" -ForegroundColor Red
         Write-Host "Your local repository will be reset to match the remote exactly." -ForegroundColor Yellow
         Write-Host "`nWhat will happen:"
@@ -515,11 +579,20 @@ function Start-HardResetLocal {
         } else {
             git status --porcelain
         }
+<<<<<<< HEAD
     }
     else {
         Write-Host "Remote already matches your local changes exactly." -ForegroundColor Yellow
     }
 
+=======
+
+        Wait-ForKeyPress
+    }
+    else {
+        Write-Host "Local repository is already up to date." -ForegroundColor Yellow
+    }
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
     Wait-ForKeyPress
 }
 
@@ -542,7 +615,10 @@ function Start-ForcePushMode {
 
         Write-Host "`nPerforming force push...`n"
         Write-Host "Adding all local changes...`n"
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
         git add .
 
         $mydate = Get-Date -Format "ddd-MM-dd"
@@ -563,12 +639,18 @@ function Start-ForcePushMode {
 
         Write-Host "`nForce push completed successfully!" -ForegroundColor Green
         Write-Host "Remote repository now matches your local changes exactly!" -ForegroundColor Green
+<<<<<<< HEAD
     }
     else {
         Write-Host "Remote repository already matches your local changes exactly!" -ForegroundColor Yellow
     }
 
     Wait-ForKeyPress
+=======
+
+        Wait-ForKeyPress
+    }
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
 }
 
 function Start-Script {
@@ -578,7 +660,10 @@ function Start-Script {
     Initialize-LFS | Out-Null
     Test-FileSizes
 
+<<<<<<< HEAD
     Update-Status
+=======
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
     Show-Menu
 }
 

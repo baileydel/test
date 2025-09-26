@@ -1,6 +1,11 @@
 "Enable Elder guardian" = true
+<<<<<<< HEAD
 "Enable Dragon" = true
 "Enable Wither" = true
+=======
+"Enable Wither" = true
+"Enable Dragon" = true
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
 
 ["Elder guardian"]
 	#If true, the player will not be able to break blocks when an Elder Guardian is nearby. This also removes Mining Fatigue.
@@ -9,6 +14,13 @@
 	#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	"Adventure range" = 48.0
 
+<<<<<<< HEAD
+=======
+[Wither]
+	#If true, Wither can charge any entity and not just players.
+	"Allow charging non players" = false
+
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
 [Dragon]
 	#Crystals can no longer be destroyed by other explosions.
 	"Explosion immune crystals" = true
@@ -25,7 +37,10 @@
 	#Adds a tooltip on the dragon egg to hint that it drops multiple times.
 	"Egg tooltip" = true
 
+<<<<<<< HEAD
 [Wither]
 	#If true, Wither can charge any entity and not just players.
 	"Allow charging non players" = false
 
+=======
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a

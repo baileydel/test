@@ -22,11 +22,19 @@
 	# If enabled, show the ftb quests button in the tabs menu.
 	"FTB Quests Tab Enabled " = true
 	# If enabled, show the map button for Map Atlases mod in the tabs menu.
+<<<<<<< HEAD
 	"Map Atlases Tab Enabled " = false
 	# If enabled, show the map button for Xaero's Map mod in the tabs menu.
 	"Xaero's Map Tab Enabled " = false
 	# If enabled, show the map button for Journey Map mod in the tabs menu.
 	"Journey Map Tab Enabled " = false
+=======
+	"Map Atlases Tab Enabled " = true
+	# If enabled, show the map button for Xaero's Map mod in the tabs menu.
+	"Xaero's Map Tab Enabled " = true
+	# If enabled, show the map button for Journey Map mod in the tabs menu.
+	"Journey Map Tab Enabled " = true
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
 	# If enabled, show the ftb teams button in the tabs menu.
 	"FTB Teams Tab Enabled " = true
 	# If enabled, show the diet button in the tabs menu.

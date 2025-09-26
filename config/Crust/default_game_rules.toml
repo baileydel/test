@@ -15,14 +15,18 @@ config_enabled = false
 # Category: player
 # Default game rule settings for the 'player' category.
 
+<<<<<<< HEAD
   player.allow_terramity_explosives = true
   player.building_debug = false
+=======
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
   player.disable_elytra_movement_check = false
   player.do_immediate_respawn = false
   player.do_limited_crafting = false
   player.drowning_damage = true
   player.fall_damage = true
   player.fire_damage = true
+<<<<<<< HEAD
   player.fragile_blocks = true
   player.freeze_damage = true
   player.keep_inventory = false
@@ -33,11 +37,20 @@ config_enabled = false
   player.spawn_radius = 10
   player.spectators_generate_chunks = true
   player.vanilla_g_u_i = false
+=======
+  player.freeze_damage = true
+  player.keep_inventory = false
+  player.natural_regeneration = true
+  player.players_sleeping_percentage = 100
+  player.spawn_radius = 10
+  player.spectators_generate_chunks = true
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
 
 
 # Category: mobs
 # Default game rule settings for the 'mobs' category.
 
+<<<<<<< HEAD
   mobs.allow_bandit_raids = true
   mobs.disable_raids = false
   mobs.disappearanceof_spirits_underthe_sun = true
@@ -49,11 +62,19 @@ config_enabled = false
   mobs.spawn_limited_time_beasts = true
   mobs.universal_anger = false
   mobs.zombiesina_barrel_spawn = true
+=======
+  mobs.disable_raids = false
+  mobs.forgive_dead_players = true
+  mobs.max_entity_cramming = 24
+  mobs.mob_griefing = true
+  mobs.universal_anger = false
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
 
 
 # Category: spawning
 # Default game rule settings for the 'spawning' category.
 
+<<<<<<< HEAD
   spawning.baby_skeleton_spawn = true
   spawning.baby_spider_spawn = true
   spawning.bloody_gadfly_spawn = true
@@ -64,11 +85,14 @@ config_enabled = false
   spawning.dark_vortex_spawn = true
   spawning.decaying_zombie_spawn = true
   spawning.decrepit_skeleton_spawn = true
+=======
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
   spawning.do_insomnia = true
   spawning.do_mob_spawning = true
   spawning.do_patrol_spawning = true
   spawning.do_trader_spawning = true
   spawning.do_warden_spawning = true
+<<<<<<< HEAD
   spawning.door_knight_spawn = true
   spawning.dread_hound_spawn = true
   spawning.fallen_chaos_knight_spawn = true
@@ -94,6 +118,10 @@ config_enabled = false
   spawning.zombie_clown_spawn = true
   spawning.zombie_fisherman_spawn = true
   spawning.zombie_lumberjack_spawn = true
+=======
+  spawning.pot_crab_spawn_chance = 17
+  spawning.pot_crab_spawning = true
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
 
 
 # Category: drops
@@ -110,10 +138,15 @@ config_enabled = false
 # Category: updates
 # Default game rule settings for the 'updates' category.
 
+<<<<<<< HEAD
   updates.ageing_spawners = true
   updates.do_daylight_cycle = true
   updates.do_fire_tick = true
   updates.do_season_cycle = true
+=======
+  updates.do_daylight_cycle = true
+  updates.do_fire_tick = true
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
   updates.do_vines_spread = true
   updates.do_weather_cycle = true
   updates.lava_source_conversion = false
@@ -128,6 +161,10 @@ config_enabled = false
   chat.announce_advancements = true
   chat.command_block_output = true
   chat.log_admin_commands = true
+<<<<<<< HEAD
+=======
+  chat.puffish_skills:announce_new_points = true
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
   chat.send_command_feedback = true
   chat.show_death_messages = true
 

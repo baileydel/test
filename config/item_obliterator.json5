@@ -30,6 +30,7 @@
 	"legendarysurvivaloverhaul:medikit",
 	"legendarysurvivaloverhaul:plaster",
 	"legendarysurvivaloverhaul:heart_fragment",
+<<<<<<< HEAD
 	"spartanweaponry:wooden_weapons",
 	"spartanweaponry:stone_weapons",
 	"terra_entity:leather_whip",
@@ -45,6 +46,14 @@
 	"terra_entity:swamp_whip",
 	"terra_entity:wooden_yoyo",
 	"terra_entity:tendon_whip"
+=======
+	"terramity:terramity_guidebook",
+	"patchouli:guide_book",
+	"vtubruhlotrmobs:bookfornoobmodlotr",
+	"spartanweaponry:wooden_weapons",
+	"spartanweaponry:stone_weapons"
+	
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
   ],
   // -----------------------------------------------------------
   // Removes an item if it contains certain nbt tag. If the whole entry (or expression) is present, the item gets removed.
@@ -70,11 +79,15 @@
   // Items here will get their recipes disabled
   // Keep in mind this already is applied to blacklisted items
   "only_disable_recipes": [
+<<<<<<< HEAD
     "minecraft:stone_axe",
     "minecraft:stone_pickaxe",
     "minecraft:stone_hoe",
     "minecraft:stone_shovel",
     "minecraft:stone_sword"
+=======
+    "examplemod:example_item"
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
   ],
   // -----------------------------------------------------------
   // If true, the mod will use a hashset to handle the blacklisted items

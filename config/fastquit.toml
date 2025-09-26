@@ -1,5 +1,9 @@
 renderSavingScreen = false
 showToasts = true
+<<<<<<< HEAD
 showSavingTime = "TRUE"
+=======
+showSavingTime = "FALSE"
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
 backgroundPriority = 2
 allowMultipleServers = true

@@ -70,8 +70,13 @@
     # <"minecraft:mob_effect" Registry List> Format: [ "namespace:entry_name", ... ], Default: [
     #   "minecraft:regeneration", "minecraft:poison" ]
     general.special_data.immune_to_effects = [
+<<<<<<< HEAD
       "minecraft:regeneration",
       "minecraft:poison"
+=======
+      "minecraft:poison",
+      "minecraft:regeneration"
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
     ]
 
   # Subcategory: ranged_stats

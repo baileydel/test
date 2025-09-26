@@ -1,6 +1,10 @@
 {
   "configVersion": 7,
+<<<<<<< HEAD
   "renderNametagsThroughWalls": true,
+=======
+  "renderNametagsThroughWalls": false,
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
   "blockEntityWhitelist": [
     "create:rope_pulley",
     "botania:flame_ring",

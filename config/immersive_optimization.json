@@ -20,10 +20,15 @@
     "minecraft:the_end": true
   },
   "entities": {
+<<<<<<< HEAD
     "minecraft:ender_pearl": false,
     "fromanotherworld:starship": false,
     "minecraft:player": false,
     "valkyrienskies": false,
+=======
+    "fromanotherworld:starship": false,
+    "minecraft:player": false,
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
     "minecraft:arrow": false,
     "create": false,
     "minecraft:ender_dragon": false

@@ -1,3 +1,10 @@
 {
+<<<<<<< HEAD
 	chapter_groups: [{ id: "02DBE8F9C9CB4867", title: "Tutorial" }]
+=======
+	chapter_groups: [
+		{ id: "1B66560D726EDFA1", title: "Back to the Basics...Again." }
+		{ id: "130B73CBAAA75FDA", title: "Kill Quests" }
+	]
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
 }

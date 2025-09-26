@@ -7,7 +7,11 @@
   //       a spread factor above 1 means all structures are rarer
   //       a spread factor below 1 means all structures are more common
   //       a spread factor of 0 disables all structures entirely
+<<<<<<< HEAD
   "spreadFactor": 2.0,
+=======
+  "spreadFactor": 1.0,
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
 
   // Some structure mods/datapacks do not specify a custom salt or use the same salt for all their structures, which might cause structure overlap.
   // Enabling this is supposed to reduce this phenomenon, as all structure sets will have their own salt, hashed from their id.
@@ -17,6 +21,7 @@
   // this is a list of custom spread factors
   "customSpreadFactors": [
     // example of the mansion being doubled in rarity (the mod's default)
+<<<<<<< HEAD
 {
   "structure": "world:bigroot",
   "factor": 0//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
@@ -141,6 +146,12 @@
 	
 	
 
+=======
+    {
+      "structure": "minecraft:mansion",
+      "factor": 2
+    },
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
     // add the structures you want to modify in the format:
     // (don't forget to remove "//", and use dots for decimal numbers)
     //

@@ -3,5 +3,9 @@
   "preferredFullscreenMode": "BORDERLESS",
   "fullscreenType": "minecraft:default",
   "borderlessFullscreenType": "windows:windowed",
+<<<<<<< HEAD
   "preferredMonitor": "0,0,1920,1080"
+=======
+  "preferredMonitor": "0,0,2560,1440"
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
 }
