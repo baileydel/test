@@ -309,7 +309,32 @@ function Push-Changes {
         }
 
         Write-Host "`n"
+
+        # Check which files were modified locally before pulling
+        $local_modified_files = git diff --name-only HEAD~1 HEAD
+
         Pull-Changes
+
+        # If files were modified both locally and remotely, restore local versions
+        if ($local_modified_files) {
+            $merge_commit = git rev-parse HEAD
+            $previous_commit = git rev-parse HEAD~1
+            if ($merge_commit -ne $previous_commit) {
+                $remote_modified_files = git diff --name-only HEAD~1 HEAD~2 2>$null
+                $conflicting_files = $local_modified_files | Where-Object { $remote_modified_files -contains $_ }
+
+                if ($conflicting_files) {
+                    Write-Host "Restoring local changes for conflicting files..." -ForegroundColor Yellow
+                    foreach ($file in $conflicting_files) {
+                        Write-Host "  - Restoring local version of: $file" -ForegroundColor Cyan
+                        git checkout HEAD~1 -- $file
+                    }
+                    git add .
+                    git commit -m "Keep local changes for conflicting files"
+                    Write-Host "Local changes preserved for all conflicting files!" -ForegroundColor Green
+                }
+            }
+        }
 
         $current_branch = git branch --show-current
         git push -u origin $current_branch
