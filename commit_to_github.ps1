@@ -357,16 +357,18 @@ function Pull-Changes {
         git stash push -m "Auto-stash to avoid conflicts"
         git pull origin $current_branch --no-edit --allow-unrelated-histories
 
-        Write-Host "Keeping your local changes (not syncing conflicted files)..." -ForegroundColor Yellow
+        Write-Host "Restoring your local changes..." -ForegroundColor Yellow
         git stash pop 2>$null
 
-        # If there are conflicts after stash pop, just keep local version
+        # If there are conflicts after stash pop, keep local version
         $conflict_files = git diff --name-only --diff-filter=U 2>$null
         if ($conflict_files) {
             Write-Host "Resolving conflicts by keeping local changes..." -ForegroundColor Yellow
             foreach ($file in $conflict_files) {
                 git checkout --ours $file
+                git add $file
             }
+            Write-Host "Conflicts resolved - local changes kept." -ForegroundColor Green
         }
     } 
     else {
