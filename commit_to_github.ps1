@@ -1,4 +1,4 @@
-$SCRIPT_VERSION = "1.5.7"
+$SCRIPT_VERSION = "1.5.8"
 
 $script:menu_selection = 1
 $script:need_remote = $false
@@ -393,7 +393,7 @@ function Pull-Changes {
 }
 
 $script:menu_items = @(
-    @{ Title = "Commit Changes Now"; Action = { Push-Changes }; Color = "Green" },
+    @{ Title = "Push Changes"; Action = { Push-Changes }; Color = "Green" },
     @{ Title = "Pull Changes from Remote"; Action = { Pull-Changes }; Color = "Cyan" },
     @{ Title = "Hard Reset to Remote"; Action = { Start-HardResetLocal }; Color = "Red" },
     @{ Title = "Force Push to Remote"; Action = { Start-ForcePushMode }; Color = "Red" }
