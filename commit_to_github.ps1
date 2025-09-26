@@ -175,11 +175,24 @@ function Update-Status {
     $has_remote_changes = Test-RemoteChangesAvailable
     $has_local_changes = Test-LocalChangesAvailable
 
+    # Check for potential merge conflicts
+    $has_conflicts = $false
+    $conflicting_files = @()
+    if ($has_remote_changes -and $has_local_changes) {
+        git add . 2>$null
+        $local_modified_files = git diff --name-only HEAD~1 HEAD 2>$null
+        $remote_modified_files = git diff --name-only HEAD "origin/$script:current_br" 2>$null
+        $conflicting_files = $local_modified_files | Where-Object { $remote_modified_files -contains $_ }
+        $has_conflicts = $conflicting_files.Count -gt 0
+    }
+
     $script:status = @{
         Repository = $script:repo_url
         Branch = $script:current_br
         HasRemoteChanges = $has_remote_changes
         HasLocalChanges = $has_local_changes
+        HasConflicts = $has_conflicts
+        ConflictingFiles = $conflicting_files
     }
 }
 
@@ -190,7 +203,9 @@ function Show-Status {
     Write-Host $script:status.Repository -ForegroundColor Blue -NoNewline
     Write-Host " | " -NoNewline
 
-    if ($script:status.HasRemoteChanges -and $script:status.HasLocalChanges) {
+    if ($script:status.HasConflicts) {
+        Write-Host "MERGE CONFLICTS DETECTED" -ForegroundColor Red
+    } elseif ($script:status.HasRemoteChanges -and $script:status.HasLocalChanges) {
         Write-Host "Remote & Local Changes" -ForegroundColor Yellow
     } elseif ($script:status.HasRemoteChanges) {
         Write-Host "Remote Changes" -ForegroundColor Yellow
@@ -198,6 +213,14 @@ function Show-Status {
         Write-Host "Local Changes" -ForegroundColor Yellow
     } else {
         Write-Host "Synced" -ForegroundColor Green
+    }
+
+    # Show conflicting files if any
+    if ($script:status.HasConflicts -and $script:status.ConflictingFiles.Count -gt 0) {
+        Write-Host "Conflicting files:" -ForegroundColor Red
+        foreach ($file in $script:status.ConflictingFiles) {
+            Write-Host "  - $file" -ForegroundColor Red
+        }
     }
 }
 
@@ -309,7 +332,48 @@ function Push-Changes {
         }
 
         Write-Host "`n"
+
+        # Check which files were modified locally before pulling
+        $local_modified_files = git diff --name-only HEAD~1 HEAD
+
+        # Check for potential conflicts before pulling
+        $current_branch = git branch --show-current
+        git fetch origin 2>$null
+        $remote_modified_files = git diff --name-only HEAD "origin/$current_branch" 2>$null
+        $conflicting_files = $local_modified_files | Where-Object { $remote_modified_files -contains $_ }
+
+        if ($conflicting_files) {
+            Write-Host "WARNING: Merge conflicts detected!" -ForegroundColor Red
+            Write-Host "The following files were modified both locally and on remote:" -ForegroundColor Yellow
+            foreach ($file in $conflicting_files) {
+                Write-Host "  - $file" -ForegroundColor Cyan
+            }
+            Write-Host "`nAfter pulling, your LOCAL changes will OVERWRITE the remote changes for these files." -ForegroundColor Yellow
+            $confirm_overwrite = Read-Host "Continue and overwrite remote changes with local? (y/n)"
+            if ($confirm_overwrite -ne "y" -and $confirm_overwrite -ne "Y") {
+                Write-Host "Operation cancelled."
+                Wait-ForKeyPress
+                return
+            }
+        }
+
         Pull-Changes
+
+        # If files were modified both locally and remotely, restore local versions
+        if ($conflicting_files) {
+            $merge_commit = git rev-parse HEAD
+            $previous_commit = git rev-parse HEAD~1
+            if ($merge_commit -ne $previous_commit) {
+                Write-Host "Restoring local changes for conflicting files..." -ForegroundColor Yellow
+                foreach ($file in $conflicting_files) {
+                    Write-Host "  - Restoring local version of: $file" -ForegroundColor Cyan
+                    git checkout HEAD~1 -- $file
+                }
+                git add .
+                git commit -m "Keep local changes for conflicting files"
+                Write-Host "Local changes preserved for all conflicting files!" -ForegroundColor Green
+            }
+        }
 
         $current_branch = git branch --show-current
         git push -u origin $current_branch
