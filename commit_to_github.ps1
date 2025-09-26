@@ -155,47 +155,6 @@ function Test-FileSizes {
     }
 }
 
-function Test-PullConflicts {
-    param([string]$current_branch = (git branch --show-current))
-
-    # Get files that would change from remote
-    $remote_changed_files = @()
-    git rev-parse HEAD 2>$null
-    if ($LASTEXITCODE -eq 0) {
-        # HEAD exists, compare with remote
-        $remote_changed_files = git diff --name-only HEAD "origin/$current_branch" 2>$null
-    } else {
-        # No HEAD yet, get all files from remote
-        $remote_changed_files = git ls-tree -r --name-only "origin/$current_branch" 2>$null
-    }
-
-    if ($LASTEXITCODE -ne 0) {
-        return @{
-            HasConflicts = $false
-            ConflictingFiles = @()
-            Error = "Unable to determine remote changes"
-        }
-    }
-
-    # Get locally modified files (staged + unstaged)
-    $local_changed_files = @()
-    $unstaged_files = git diff --name-only 2>$null
-    $staged_files = git diff --name-only --cached 2>$null
-
-    if ($unstaged_files) { $local_changed_files += $unstaged_files }
-    if ($staged_files) { $local_changed_files += $staged_files }
-
-    # Find conflicts - files modified both locally and remotely
-    $conflicting_files = $remote_changed_files | Where-Object { $local_changed_files -contains $_ }
-
-    return @{
-        HasConflicts = ($conflicting_files.Count -gt 0)
-        ConflictingFiles = $conflicting_files
-        RemoteChangedFiles = $remote_changed_files
-        LocalChangedFiles = $local_changed_files
-    }
-}
-
 function Test-RemoteChangesAvailable {
     $script:current_br = $current_branch = git branch --show-current
     git fetch origin 2>$null
