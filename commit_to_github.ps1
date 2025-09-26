@@ -362,7 +362,13 @@ function Pull-Changes {
                 $conflict_files = git ls-files --unmerged
                 if ($conflict_files) {
                     Write-Host "CONFLICTS detected after restoring changes!" -ForegroundColor Red
-                    Write-Host "Please resolve conflicts manually." -ForegroundColor Red
+                    Write-Host "Auto-resolving by keeping your local changes..." -ForegroundColor Yellow
+                    foreach ($file in $conflict_files) {
+                        $file_name = ($file -split '\t')[1]
+                        git checkout --ours $file_name
+                        git add $file_name
+                    }
+                    Write-Host "Conflicts resolved - your local changes have been kept." -ForegroundColor Green
                 }
             }
             "2" {
