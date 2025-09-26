@@ -341,7 +341,7 @@ function Pull-Changes {
 
     # Show remote changes
     Write-Host "`nChanges available from remote:"
-    git rev-parse HEAD 2>$null
+    git rev-parse HEAD 2>$null | Out-Null
     if ($LASTEXITCODE -eq 0) {
         git log HEAD..origin/$current_branch --oneline --name-status
     } else {
