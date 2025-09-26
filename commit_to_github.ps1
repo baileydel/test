@@ -62,8 +62,7 @@ function Initialize-Repository {
 
     # Set up remote if needed
     if ($script:need_remote) {
-        Write-Host "No remote origin configured. Setting up remote repository..."
-        Write-Host "`n"
+        Write-Host "No remote origin configured. Setting up remote repository...`n"
 
         do {
             $repo_url = Read-Host "Enter GitHub repository URL (https://github.com/username/repo.git)"
@@ -264,7 +263,34 @@ function Show-Menu {
     Start-MenuLoop $status_line
 }
 
-function Commit-Script {    
+function Commit-Changes {
+    param([string]$CommitMessage, [string]$SuccessMessage)
+
+    if (-not (Test-LocalChangesAvailable)) {
+        Write-Host "No changes to commit."
+        return $false
+    }
+
+    git add .
+
+    $mydate = Get-Date -Format "ddd-MM-dd"
+    $mytime = Get-Date -Format "HH:mm"
+    $timestamp = "$mydate $mytime"
+
+    $commit_message = if ($CommitMessage) { "$CommitMessage $timestamp" } else { "Auto commit $timestamp" }
+
+    git commit -m $commit_message
+
+    if ($LASTEXITCODE -eq 0) {
+        Write-Host $SuccessMessage -ForegroundColor Green
+        return $true
+    } else {
+        Write-Host "Commit failed!" -ForegroundColor Red
+        return $false
+    }
+}
+
+function Push-Changes {
     if (Test-LocalChangesAvailable) {
         Write-Host "`nGit Status:"
         git status --porcelain
@@ -277,17 +303,16 @@ function Commit-Script {
             return
         }
 
-        $mydate = Get-Date -Format "ddd-MM-dd"
-        $mytime = Get-Date -Format "HH:mm"
-        $commit_message = "Auto commit $mydate $mytime"
+        $committed = Commit-Changes -SuccessMessage "Changes committed successfully!"
+        if (-not $committed) {
+            Wait-ForKeyPress
+            return
+        }
 
-        git commit -m $commit_message
         Write-Host "`n"
-
         Pull-Changes
 
         $current_branch = git branch --show-current
-
         git push -u origin $current_branch
 
         if ($LASTEXITCODE -ne 0) {
@@ -296,8 +321,8 @@ function Commit-Script {
             return
         }
 
-        Write-Host "`nCommit completed successfully!" -ForegroundColor Green
-    } 
+        Write-Host "`nCommit and push completed successfully!" -ForegroundColor Green
+    }
     else {
         Write-Host "No changes to commit."
     }
@@ -328,8 +353,22 @@ function Pull-Changes {
 
     if ($would_conflict) {
         Write-Host "`nLocal uncommitted changes detected that may conflict." -ForegroundColor Yellow
+        Write-Host "Stashing local changes to avoid conflicts..." -ForegroundColor Yellow
 
+        git stash push -m "Auto-stash to avoid conflicts"
         git pull origin $current_branch --no-edit --allow-unrelated-histories
+
+        Write-Host "Keeping your local changes (not syncing conflicted files)..." -ForegroundColor Yellow
+        git stash pop 2>$null
+
+        # If there are conflicts after stash pop, just keep local version
+        $conflict_files = git diff --name-only --diff-filter=U 2>$null
+        if ($conflict_files) {
+            Write-Host "Resolving conflicts by keeping local changes..." -ForegroundColor Yellow
+            foreach ($file in $conflict_files) {
+                git checkout --ours $file
+            }
+        }
     } 
     else {
         # Clean pull
@@ -353,7 +392,7 @@ function Pull-Changes {
 }
 
 $script:menu_items = @(
-    @{ Title = "Commit Changes Now"; Action = { Commit-Script }; Color = "Green" },
+    @{ Title = "Commit Changes Now"; Action = { Push-Changes }; Color = "Green" },
     @{ Title = "Pull Changes from Remote"; Action = { Pull-Changes }; Color = "Cyan" },
     @{ Title = "Hard Reset to Remote"; Action = { Start-HardResetLocal }; Color = "Red" },
     @{ Title = "Force Push to Remote"; Action = { Start-ForcePushMode }; Color = "Red" }
@@ -466,13 +505,13 @@ function Start-ForcePushMode {
         }
 
         Write-Host "`nPerforming force push...`n"
-        Write-Host "Adding all local changes...`n"
 
-        git add .
+        $committed = Commit-Changes -CommitMessage "Force push commit" -SuccessMessage "Changes committed for force push!"
 
-        $mydate = Get-Date -Format "ddd-MM-dd"
-        $mytime = Get-Date -Format "HH:mm"
-        git commit -m "Force push commit $mydate $mytime"
+        if (-not $committed) {
+            Wait-ForKeyPress
+            return
+        }
 
         # Get current branch
         $current_branch = git branch --show-current
