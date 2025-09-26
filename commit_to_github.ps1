@@ -341,16 +341,7 @@ function Pull-Changes {
 
     if ($would_conflict) {
         Write-Host "`nLocal uncommitted changes detected that may conflict." -ForegroundColor Yellow
-        Write-Host "Choose how to handle:" -ForegroundColor Cyan
-        Write-Host "1. Stash local changes, pull, then restore (recommended)" -ForegroundColor Green
-        Write-Host "2. Keep remote changes, discard local changes" -ForegroundColor Red
-        Write-Host "3. Cancel pull" -ForegroundColor Gray
-
-        $choice = Read-Host "Enter choice (1/2/3)"
-
-        switch ($choice) {
-            "1" {
-                # Stash and restore
+       
                 Write-Host "Stashing local changes..." -ForegroundColor Yellow
                 git stash push -m "Auto-stash before pull"
 
@@ -358,37 +349,6 @@ function Pull-Changes {
 
                 Write-Host "Restoring local changes..." -ForegroundColor Yellow
                 git stash pop 2>$null
-
-                $conflict_files = git ls-files --unmerged
-                if ($conflict_files) {
-                    Write-Host "CONFLICTS detected after restoring changes!" -ForegroundColor Red
-                    Write-Host "Auto-resolving by keeping your local changes..." -ForegroundColor Yellow
-                    foreach ($file in $conflict_files) {
-                        $file_name = ($file -split '\t')[1]
-                        git checkout --ours $file_name
-                        git add $file_name
-                    }
-                    Write-Host "Conflicts resolved - your local changes have been kept." -ForegroundColor Green
-                }
-            }
-            "2" {
-                # Discard local changes
-                Write-Host "Discarding local changes..." -ForegroundColor Red
-                git reset --hard HEAD
-                git clean -fd
-                git pull origin $current_branch --no-edit --allow-unrelated-histories
-            }
-            "3" {
-                Write-Host "Pull cancelled." -ForegroundColor Gray
-                Wait-ForKeyPress
-                return
-            }
-            default {
-                Write-Host "Invalid choice. Pull cancelled." -ForegroundColor Red
-                Wait-ForKeyPress
-                return
-            }
-        }
     } else {
         # Clean pull
         $confirm = Read-Host "`nPull these changes? (y/n)"
