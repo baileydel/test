@@ -307,7 +307,8 @@ function Push-Changes {
             Wait-ForKeyPress
             return
         }
-        
+
+        Write-Host "`n"
         Pull-Changes
 
         $current_branch = git branch --show-current
@@ -339,21 +340,11 @@ function Pull-Changes {
 
     # Show remote changes
     Write-Host "`nChanges available from remote:"
-
-    # Check if we have a local HEAD
     git rev-parse HEAD 2>$null | Out-Null
     if ($LASTEXITCODE -eq 0) {
-        # Show commits from HEAD to remote
-        $log_output = git log HEAD..origin/$current_branch --oneline --name-status 2>$null
-        if ($log_output) {
-            $log_output
-        } else {
-            # Fallback: show diff
-            git diff HEAD origin/$current_branch --name-status
-        }
+        git log HEAD..origin/$current_branch --oneline --name-status
     } else {
-        # No local HEAD, show latest remote commit
-        git log origin/$current_branch --oneline --name-status --max-count=3
+        git log origin/$current_branch --oneline --name-status --max-count=1
     }
 
     # Check if pull would be blocked by uncommitted changes
