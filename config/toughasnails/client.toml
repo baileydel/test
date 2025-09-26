@@ -2,10 +2,26 @@
 [gui]
 	#The offset of the left of the thirst overlay from its default position.
 	thirst_left_offset = 0
+<<<<<<< HEAD
 	#The offset of the top of the thirst overlay from its default position.
 	thirst_top_offset = 0
+=======
+<<<<<<< HEAD
+	#The offset of the top of the thirst overlay from its default position.
+	thirst_top_offset = 0
+=======
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
 	#The offset of the left of the temperature overlay from its default position.
 	temperature_left_offset = 0
 	#The offset of the top of the temperature overlay from its default position.
 	temperature_top_offset = 0
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+	#The offset of the top of the thirst overlay from its default position.
+	thirst_top_offset = 0
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
 

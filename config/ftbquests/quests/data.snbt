@@ -10,6 +10,13 @@
 	drop_loot_crates: false
 	emergency_items_cooldown: 300
 	grid_scale: 0.5d
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+	icon: "vtubruhlotrmobs:vquesttable"
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
 	lock_message: ""
 	loot_crate_no_drop: {
 		boss: 0
@@ -19,6 +26,14 @@
 	pause_game: false
 	progression_mode: "linear"
 	show_lock_icons: false
+<<<<<<< HEAD
 	title: "Modded"
+=======
+<<<<<<< HEAD
+	title: "Modded"
+=======
+	title: "Quests"
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
 	version: 13
 }

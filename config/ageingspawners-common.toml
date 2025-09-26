@@ -1,4 +1,8 @@
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
 #General settings
 [General]
 	#Decides whether the spawner is on blacklist, whitelist-only or player_placed mode [Default: WHITELIST]
@@ -7,6 +11,11 @@
 	#Decides whether only player placed spawners age [Default: false]
 	playerPlacedOnly = false
 
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
 #Whitelist settings
 [Whitelist]
 	#Decides default spawnCount of spawns a spawner can have in WHITELIST mode unless specified [Default: 20]
@@ -17,6 +26,20 @@
 	#[example: 'minecraft:pig;5' ]
 	whitelist = [""]
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+#General settings
+[General]
+	#Decides whether the spawner is on blacklist, whitelist-only or player_placed mode [Default: WHITELIST]
+	#Allowed Values: BLACKLIST, WHITELIST
+	spawnerMode = "WHITELIST"
+	#Decides whether only player placed spawners age [Default: false]
+	playerPlacedOnly = false
+
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
 #Blacklist settings
 [Blacklist]
 	#Decides the spawnCount of spawns a spawner can have in BLACKLIST mode [Default: 20]

@@ -69,11 +69,22 @@
   #     Height-adjusted temperature. For reference, freezing is < 0.15 and hot is generally considered > 0.95.
   # 
   #   "biome_category (!)category":
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
   #     Deprecated, use "biome_tag" instead!
   # 
   #   "biome_tag (!)#namespace:biome_tag":
   #     The biome tag. See the wiki for vanilla biome tags (resource locations)
   #       [https://minecraft.wiki/w/Biome_tag_(Java_Edition)].
+<<<<<<< HEAD
+=======
+=======
+  #     Valid category values: "none", "taiga", "hills", "jungle", "badlands", "plains", "savanna", "icy", "the_end",
+  #       "beach", "forest", "ocean", "desert", "river", "swamp", "mushroom", "nether"
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
   # 
   #   "biome (!)namespace:biome_name":
   #     The biome. See the wiki for vanilla biome names (resource locations)

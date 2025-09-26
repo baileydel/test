@@ -23,6 +23,10 @@
 	#Add here custom colors (in hex format) to associate with your damage types. This is a map from damage source ID to a color where you can add new entries for each
 	[visuals.damage_type_colors]
 		"minecraft:generic" = "#00FFFFFF"
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
 		"#dummmmmmy:is_explosion" = "#00FFBB29"
 		"minecraft:dragon_breath" = "#00E600FF"
 		"#dummmmmmy:is_cold" = "#0009D2FF"
@@ -38,4 +42,24 @@
 		"#minecraft:witch_resistant_to" = "#00844CE7"
 		"#dummmmmmy:is_fire" = "#00FF7700"
 		"#dummmmmmy:is_wither" = "#00666666"
+<<<<<<< HEAD
+=======
+=======
+		"#minecraft:is_lightning" = "#00FFF200"
+		"minecraft:dragon_breath" = "#00E600FF"
+		"#dummmmmmy:is_thorn" = "#000FA209"
+		"attributeslib:bleeding" = "#00810A0A"
+		"#dummmmmmy:is_wither" = "#00666666"
+		"minecraft:trident" = "#0000FF9D"
+		"#dummmmmmy:is_cold" = "#0009D2FF"
+		"#minecraft:is_drowning" = "#001898E3"
+		"dummmmmmy:true" = "#00910038"
+		"minecraft:sonic_boom" = "#00074550"
+		"#minecraft:witch_resistant_to" = "#00844CE7"
+		"#dummmmmmy:is_explosion" = "#00FFBB29"
+		"dummmmmmy:critical" = "#00FF0000"
+		"minecraft:wind_charge" = "#00BEF3FF"
+		"#dummmmmmy:is_fire" = "#00FF7700"
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
 

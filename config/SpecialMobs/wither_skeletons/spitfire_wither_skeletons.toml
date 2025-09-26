@@ -72,11 +72,24 @@
     general.special_data.immune_to_sticky_blocks = []
     # Spitfire wither skeletons cannot be inflicted with any effects specified here (e.g. "instant_damage" or
     #   "regeneration").
+<<<<<<< HEAD
     # <"minecraft:mob_effect" Registry List> Format: [ "namespace:entry_name", ... ], Default: [ "minecraft:poison",
     #   "minecraft:regeneration" ]
     general.special_data.immune_to_effects = [
       "minecraft:regeneration",
       "minecraft:poison"
+=======
+    # <"minecraft:mob_effect" Registry List> Format: [ "namespace:entry_name", ... ], Default: [
+    #   "minecraft:regeneration", "minecraft:poison" ]
+    general.special_data.immune_to_effects = [
+<<<<<<< HEAD
+      "minecraft:regeneration",
+      "minecraft:poison"
+=======
+      "minecraft:poison",
+      "minecraft:regeneration"
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     ]
 
   # Subcategory: ranged_stats

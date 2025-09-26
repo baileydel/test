@@ -1,9 +1,23 @@
 
 [general]
 	#Whether to display the dragon on the main menu or not
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
 	"Custom main menu" = false
 	#True if riding dragons should make the player take a 3rd person view automatically.
 	"Auto 3rd person when riding dragon" = false
 	#Whether to use the vanilla font in the bestiary or not
 	"Use Vanilla Font" = true
+<<<<<<< HEAD
+=======
+=======
+	"Custom main menu" = true
+	#True if riding dragons should make the player take a 3rd person view automatically.
+	"Auto 3rd person when riding dragon" = true
+	#Whether to use the vanilla font in the bestiary or not
+	"Use Vanilla Font" = false
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
 

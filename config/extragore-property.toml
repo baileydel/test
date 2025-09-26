@@ -75,6 +75,10 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
 "255,0,0" = [
     "legendary_monsters:overgrown_colossus",
     "specialmobs:albinosilverfish",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "the_pillager_legion_:heavy_gladiators_nether_tpl",
     "orcz:orcsavageweird",
     "mocreatures:firescorpion",
@@ -82,6 +86,22 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "miniboss_boss_bars:netherobeliskbossbarentity",
     "miniboss_boss_bars:wardenbossbarentity",
     "born_in_chaos_v1:lifestealer",
+<<<<<<< HEAD
+=======
+=======
+    "more_critters:pink_monster",
+    "the_pillager_legion_:heavy_gladiators_nether_tpl",
+    "orcz:orcsavageweird",
+    "more_critters:shock_cube_small",
+    "mocreatures:firescorpion",
+    "terra_entity:blood_tumors",
+    "unusualprehistory:kentrosaurus",
+    "miniboss_boss_bars:netherobeliskbossbarentity",
+    "miniboss_boss_bars:wardenbossbarentity",
+    "born_in_chaos_v1:lifestealer",
+    "aquaculture:muskellunge",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "miniboss_boss_bars:drakvyrnbossbarentity",
     "terra_entity:purple_slime",
     "miniboss_boss_bars:theheavybossbarentity",
@@ -89,6 +109,10 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "valarian_conquest:orc_shaman",
     "minecraft:tadpole",
     "terra_entity:black_slime",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "goblins_tyranny:chubby_glitteron",
     "bygonenether:piglin_hunter",
     "specialmobs:tropicaldrowned",
@@ -96,10 +120,31 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "seadwellers:mermorph_blacksmith",
     "bygonenether:wex",
     "mocreatures:kitty",
+<<<<<<< HEAD
+=======
+=======
+    "bygonenether:piglin_hunter",
+    "unusualprehistory:beelz_tadpole",
+    "specialmobs:tropicaldrowned",
+    "born_in_chaos_v1:pumpkin_bruiser",
+    "bygonenether:wex",
+    "mocreatures:kitty",
+    "unusualprehistory:mammoth",
+    "mawabestiary:zombicator_top_half",
+    "more_critters:nauticrawl",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "terramity:spirit_bomb",
     "luminous_beasts:rare_vile_gator",
     "mobz:boar",
     "world:ghostguardian",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+    "unusualprehistory:coty",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "pumpeddesertremake:evil_sand_storm",
     "the_pillager_legion_:giant_infantryman_tpl",
     "mobz:katherine",
@@ -130,7 +175,17 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "pumpeddesertremake:rihno_baybe",
     "valarian_conquest:numerian_archer",
     "mocreatures:cricket",
+<<<<<<< HEAD
     "specialmobs:bruteskeleton",
+=======
+<<<<<<< HEAD
+    "specialmobs:bruteskeleton",
+=======
+    "more_critters:carrybug_no_saddle",
+    "specialmobs:bruteskeleton",
+    "aquaculture:pacific_halibut",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "world:well_1",
     "specialmobs:watercavespider",
     "kobolds:kobold_randx",
@@ -138,19 +193,45 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "threateningly_mobs:frostbite",
     "miniboss_boss_bars:witherfungusbossbarentity",
     "valarian_conquest:lancastian_knight",
+<<<<<<< HEAD
     "creatures_expanded:shadowfiend",
     "born_in_chaos_v1:corpse_fish",
+=======
+<<<<<<< HEAD
+    "creatures_expanded:shadowfiend",
+    "born_in_chaos_v1:corpse_fish",
+=======
+    "more_critters:plainswyrm",
+    "creatures_expanded:shadowfiend",
+    "born_in_chaos_v1:corpse_fish",
+    "unusualprehistory:brachi",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "legendary_monsters:skeloraptor",
     "born_in_chaos_v1:supreme_bonescaller_stage_2",
     "mocreatures:ant",
     "miniboss_boss_bars:creeptusbossbarentity",
     "legendarycreatures:nether_wisp",
+<<<<<<< HEAD
     "piglet_structures:the_laser",
+=======
+<<<<<<< HEAD
+    "piglet_structures:the_laser",
+=======
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "illagerinvasion:inquisitor",
     "miniboss_boss_bars:spiderqueenbossbarentity",
     "iceandfire:siren",
     "valarian_conquest:visgothian_knight",
+<<<<<<< HEAD
     "piglet_structures:warper",
+=======
+<<<<<<< HEAD
+    "piglet_structures:warper",
+=======
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "terra_entity:decayeder",
     "mobz:small_spider",
     "terra_entity:big_bones",
@@ -158,8 +239,18 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "miniboss_boss_bars:supergolembossbarentity",
     "glorious_creatures:pigursus",
     "ender_wyrmlings:ice_wyrmling",
+<<<<<<< HEAD
     "creatures_expanded:gilded_zombie",
     "deadlydinos:parasaurolophus",
+=======
+<<<<<<< HEAD
+    "creatures_expanded:gilded_zombie",
+    "deadlydinos:parasaurolophus",
+=======
+    "unusualprehistory:paraceratherium",
+    "creatures_expanded:gilded_zombie",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "valarian_conquest:valarian_spearman",
     "valarian_conquest:aegis_guard",
     "terramity:antimatter_bomb_entity",
@@ -171,7 +262,14 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "born_in_chaos_v1:nightmare_stalker",
     "miniboss_boss_bars:hellstonegolembossbarentity",
     "creatures_expanded:spider_egg",
+<<<<<<< HEAD
     "piglet_structures:flying_book",
+=======
+<<<<<<< HEAD
+    "piglet_structures:flying_book",
+=======
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "miniboss_boss_bars:mushlinspewerbossbarentity",
     "iter_rpg:hydra_bubble",
     "iter_rpg:demonspine",
@@ -191,6 +289,13 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "ddenizens:gazer",
     "born_in_chaos_v1:lords_felsteed",
     "world:temple",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+    "more_critters:creeblossom",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "creatures_expanded:cryofang_spider",
     "mocreatures:komododragon",
     "threateningly_mobs:twining_vine",
@@ -205,21 +310,48 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "minecraft:zombified_piglin",
     "mobz:templar",
     "tide:yellow_perch",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "miniboss_boss_bars:skyautomatonbossbarentity",
     "pumpeddesertremake:cactuschek",
     "specialmobs:minicreeper",
     "terra_entity:anger_goblin",
     "orcz:savageorciron",
     "piglet_structures:the_garden_gnome",
+<<<<<<< HEAD
+=======
+=======
+    "more_critters:avoider_fry",
+    "miniboss_boss_bars:skyautomatonbossbarentity",
+    "pumpeddesertremake:cactuschek",
+    "unusualprehistory:baby_paracer",
+    "specialmobs:minicreeper",
+    "terra_entity:anger_goblin",
+    "orcz:savageorciron",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "world:oldman",
     "born_in_chaos_v1:lord_pumpkinhead_withouta_horse",
     "valarian_conquest:valarian_female_villager",
     "specialmobs:firecavespider",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+    "more_critters:heal_echo",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "illagerinvasion:basher",
     "valarian_conquest:ranged_mercenary",
     "tide:bluegill",
     "valarian_conquest:legion_spearman",
     "iceandfire:myrmex_soldier",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "bloxysstructures:giant_cow",
     "fantasyfauna:mushcap_brown",
     "bloxysstructures:giant_pig",
@@ -238,19 +370,60 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "terra_entity:rideable_bee",
     "valarian_conquest:numerian_knight",
     "goblins_tyranny:glitteron",
+<<<<<<< HEAD
+=======
+=======
+    "fantasyfauna:mushcap_brown",
+    "terramity:gaias_grace_ring",
+    "valarian_conquest:caladrian_villager",
+    "more_critters:echo",
+    "more_critters:mightshroom_echo",
+    "miniboss_boss_bars:drozenbossbarentity",
+    "tameablebeasts:crested_gecko",
+    "miniboss_boss_bars:redstonegolembossbarentity",
+    "iceandfire:pixie",
+    "creatures_expanded:kamikaze_creeper",
+    "more_critters:expy",
+    "terra_entity:summon_snow_flinx",
+    "iceandfire:myrmex_sentinel",
+    "enchanted:mandrake",
+    "glorious_creatures:tribal_frog",
+    "terra_entity:rideable_bee",
+    "valarian_conquest:numerian_knight",
+    "unusualprehistory:brachi_teen",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "mocreatures:ent",
     "miniboss_boss_bars:reaperbossbarentity",
     "terramity:gundalf",
     "miniboss_boss_bars:thegravewatcherbossbarentity",
     "miniboss_boss_bars:possessedelderguardianbossbarentity",
+<<<<<<< HEAD
     "mocreatures:crocodile",
+=======
+<<<<<<< HEAD
+    "mocreatures:crocodile",
+=======
+    "mobcatalog:penguin",
+    "more_critters:bomb_jelly",
+    "mocreatures:crocodile",
+    "unusualprehistory:barinasuchus",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "terramity:guided_energy_blast_projectile",
     "miniboss_boss_bars:frozenvilegatorbossbarentity",
     "miniboss_boss_bars:kamathbossbarentity",
     "miniboss_boss_bars:guardianoftheeclipsebossbarentity",
     "miniboss_boss_bars:lichbossbarentity",
     "specialmobs:firezombie",
+<<<<<<< HEAD
     "piglet_structures:fake_garden_gnome",
+=======
+<<<<<<< HEAD
+    "piglet_structures:fake_garden_gnome",
+=======
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "cardinal_sins:sinofgreed",
     "threateningly_mobs:the_earthloong",
     "mocreatures:hippotang",
@@ -265,6 +438,13 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "cardinal_sins:linneausofsloth",
     "terra_entity:wall_of_flesh_eye",
     "threateningly_mobs:lighting_alert",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+    "unusualprehistory:baby_dunk",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "mocreatures:liard",
     "miniboss_boss_bars:taintedflamebossbarentity",
     "valarian_conquest:lancastian_female_villager",
@@ -284,11 +464,25 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "specialmobs:doomcreeper",
     "terra_entity:desert_slime",
     "fantasyfauna:jumping_spider",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+    "mawabestiary:veteran_zombicator_top_half",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "iter_rpg:mournstone",
     "valarian_conquest:galician_female_villager",
     "miniboss_boss_bars:priestbossbarentity",
     "cardinal_sins:sacredwarrior",
     "specialmobs:sniperskeleton",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+    "more_critters:shimmerworm",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "valarian_conquest:bohemian_king",
     "miniboss_boss_bars:elementalbossbarentity",
     "threateningly_mobs:moon_priest",
@@ -297,6 +491,13 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "iter_rpg:caltrop_thrown",
     "valarian_conquest:caladrian_guard",
     "iter_rpg:peeper",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+    "aquaculture:bluegill",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "miniboss_boss_bars:mushroommonstrositybossbarentity",
     "humancompanions:arbalist",
     "threateningly_mobs:lord_mane",
@@ -305,13 +506,27 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "mobz:frost_creeper",
     "iter_rpg:aura_tearburst",
     "pumpeddesertremake:saxul_jay",
+<<<<<<< HEAD
     "piglet_structures:jumpy_ball",
+=======
+<<<<<<< HEAD
+    "piglet_structures:jumpy_ball",
+=======
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "valarian_conquest:dwarven_miner",
     "world:mine_002",
     "miniboss_boss_bars:kobolediatorbossbarentity",
     "minecraft:donkey",
     "iter_rpg:prismauler",
     "miniboss_boss_bars:solifugeskulkerbossbarentity",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+    "more_critters:bouncelizard",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "terra_entity:bloody_spore",
     "minecraft:piglin_brute",
     "miniboss_boss_bars:walkingbedbossbarentity",
@@ -328,12 +543,26 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "specialmobs:brutewitherskeleton",
     "born_in_chaos_v1:pumpkin_spirit",
     "cardinal_sins:sinofpridephase_1",
+<<<<<<< HEAD
     "piglet_structures:the_suspicious_garden_gnome",
+=======
+<<<<<<< HEAD
+    "piglet_structures:the_suspicious_garden_gnome",
+=======
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "glorious_creatures:desert_lurker",
     "specialmobs:slime",
     "threateningly_mobs:terra_dragon_re",
     "miniboss_boss_bars:natureologerbossbarentity",
     "iceandfire:ice_dragon",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+    "unusualprehistory:baby_palaophis",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "miniboss_boss_bars:wasdwhitebossbossbarentity",
     "valarian_conquest:lancastian_archer",
     "cardinal_sins:sinofgluttony",
@@ -348,6 +577,10 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "terra_entity:drippler",
     "miniboss_boss_bars:coralseaviperbossbarentity",
     "specialmobs:sandcreeper",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "bloxysstructures:inferno_hydra",
     "specialmobs:drowned",
     "miniboss_boss_bars:prowlerbossbarentity",
@@ -357,12 +590,32 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "terra_entity:cursed_skull",
     "specialmobs:strawberryslime",
     "miniboss_boss_bars:necroslothbossbarentity",
+<<<<<<< HEAD
+=======
+=======
+    "specialmobs:drowned",
+    "miniboss_boss_bars:prowlerbossbarentity",
+    "mobz:toad",
+    "oddorganisms:doedicurus",
+    "terra_entity:bird",
+    "world:ghoulsummon",
+    "aquaculture:carp",
+    "terra_entity:cursed_skull",
+    "specialmobs:strawberryslime",
+    "miniboss_boss_bars:necroslothbossbarentity",
+    "more_critters:ancient_skeleton_exhibit",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "miniboss_boss_bars:enforcerbossbarentity",
     "miniboss_boss_bars:apotheosismythicbossbarentity",
     "mocreatures:ogre",
     "mobz:nether_wolf",
     "miniboss_boss_bars:queenbeebossbarentity",
     "miniboss_boss_bars:soulfurnacebossbarentity",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "miniboss_boss_bars:icedragonbossbarentity",
     "miniboss_boss_bars:windyphoenixbossbarentity",
     "seadwellers:random_mermorph",
@@ -374,6 +627,23 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "cardinal_sins:sinoflust",
     "terramity:final_kamehameha",
     "mobs_of_mythology:automaton",
+<<<<<<< HEAD
+=======
+=======
+    "aquaculture:boulti",
+    "miniboss_boss_bars:icedragonbossbarentity",
+    "miniboss_boss_bars:windyphoenixbossbarentity",
+    "more_critters:blubberfish_fry",
+    "miniboss_boss_bars:wildfirebossbarentity",
+    "mocreatures:ray",
+    "tameablebeasts:tameable_racoon",
+    "specialmobs:weatheredskeleton",
+    "valarian_conquest:gardonian_spearman",
+    "mobcatalog:stonemaw",
+    "cardinal_sins:sinoflust",
+    "terramity:final_kamehameha",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "minecraft:vindicator",
     "miniboss_boss_bars:overlordbossbarentity",
     "specialmobs:hardenedmagmacube",
@@ -382,7 +652,14 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "mobz:zombie_mage",
     "mocreatures:anchovy",
     "threateningly_mobs:abyss_fang",
+<<<<<<< HEAD
     "deadlydinos:acrocanthosaurus",
+=======
+<<<<<<< HEAD
+    "deadlydinos:acrocanthosaurus",
+=======
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "miniboss_boss_bars:scorpioidbloodlusterbossbarentity",
     "quark:forgotten",
     "iter_rpg:sorrowsealed",
@@ -409,10 +686,24 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "luminous_beasts:crimson_spitter",
     "fantasyfauna:mushcap_warped",
     "specialmobs:flyingsilverfish",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "bloxysstructures:adventure_realm_golem",
     "terra_entity:piggy_bank",
     "iter_rpg:star_worm_segment",
     "mobz:wither_blaze",
+<<<<<<< HEAD
+=======
+=======
+    "terra_entity:piggy_bank",
+    "iter_rpg:star_worm_segment",
+    "mobz:wither_blaze",
+    "aquaculture:catfish",
+    "unusualprehistory:baby_rex",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "miniboss_boss_bars:butcherbossbarentity",
     "terramity:apparition",
     "world:dryad",
@@ -421,14 +712,32 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "specialmobs:knightskeleton",
     "specialmobs:cavespider",
     "illagerinvasion:firecaller",
+<<<<<<< HEAD
     "iceandfire:lightning_dragon",
     "minecraft:pig",
     "orcz:snotlure",
+=======
+<<<<<<< HEAD
+    "iceandfire:lightning_dragon",
+    "minecraft:pig",
+    "orcz:snotlure",
+=======
+    "illager_additions:shogun",
+    "iceandfire:lightning_dragon",
+    "minecraft:pig",
+    "orcz:snotlure",
+    "aquaculture:atlantic_halibut",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "specialmobs:flameenderman",
     "miniboss_boss_bars:mummybossbarentity",
     "terra_entity:flying_fish",
     "threateningly_mobs:strong_zombie",
     "iceandfire:fire_dragon",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "deadlydinos:anomaly_acrocanthosaurus",
     "minecraft:cod",
     "mobz:toad_giant",
@@ -437,12 +746,29 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "humancompanions:axeguard",
     "terramity:tg_hand",
     "threateningly_mobs:forest_drake_egg_entity",
+<<<<<<< HEAD
+=======
+=======
+    "minecraft:cod",
+    "mobz:toad_giant",
+    "aquaculture:red_grouper",
+    "world:unicorn_2",
+    "humancompanions:axeguard",
+    "terramity:tg_hand",
+    "threateningly_mobs:forest_drake_egg_entity",
+    "illager_additions:new_samurai",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "valarian_conquest:valarian_cannon",
     "tide:mint_carp",
     "creatures_expanded:tremorgue",
     "specialmobs:pirateskeleton",
     "minecraft:cow",
     "miniboss_boss_bars:aridyetibossbarentity",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "miniboss_boss_bars:bonestalkerbossbarentity",
     "mobz:withender",
     "creatures_expanded:radiant_ghoul",
@@ -452,6 +778,19 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "minecraft:salmon",
     "specialmobs:knightzombifiedpiglin",
     "valarian_conquest:legion_officer",
+<<<<<<< HEAD
+=======
+=======
+    "aquaculture:rainbow_trout",
+    "miniboss_boss_bars:bonestalkerbossbarentity",
+    "mobz:withender",
+    "creatures_expanded:radiant_ghoul",
+    "minecraft:salmon",
+    "specialmobs:knightzombifiedpiglin",
+    "valarian_conquest:legion_officer",
+    "more_critters:small_heal_echo",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "terra_entity:spore_bat",
     "pumpeddesertremake:mummy",
     "fantasyfauna:mushcap_glowing",
@@ -474,26 +813,65 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "miniboss_boss_bars:converteddragonbossbarentity",
     "born_in_chaos_v1:diamond_termite",
     "glorious_creatures:fly",
+<<<<<<< HEAD
     "deadlydinos:yutyrannus",
+=======
+<<<<<<< HEAD
+    "deadlydinos:yutyrannus",
+=======
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "terra_entity:clothier",
     "mocreatures:frostmanticore",
     "mocreatures:undeadscorpion",
     "mobz:ice_golem",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "burrowers:silver_dweller",
     "glorious_creatures:bandit",
     "miniboss_boss_bars:spiderwidowbossbarentity",
     "mobz:tadpode",
     "miniboss_boss_bars:mazemotherbossbarentity",
     "iceandfire:cockatrice",
+<<<<<<< HEAD
+=======
+=======
+    "aquaculture:arrau_turtle",
+    "burrowers:silver_dweller",
+    "glorious_creatures:bandit",
+    "oddorganisms:slovenicus",
+    "miniboss_boss_bars:spiderwidowbossbarentity",
+    "mobz:tadpode",
+    "more_critters:bomb_jelly_large",
+    "tameablebeasts:graptera",
+    "miniboss_boss_bars:mazemotherbossbarentity",
+    "iceandfire:cockatrice",
+    "mobcatalog:crab",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "terra_entity:spore_skeleton",
     "specialmobs:babyghast",
     "glorious_creatures:skeleton_lich",
     "mocreatures:bird",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "goblins_tyranny:copper_cave_goblin",
     "miniboss_boss_bars:netherkingbossbarentity",
     "miniboss_boss_bars:skeletosaurusbossbarentity",
     "mocreatures:minigolem",
     "goblins_tyranny:bartender_goblin",
+<<<<<<< HEAD
+=======
+=======
+    "miniboss_boss_bars:netherkingbossbarentity",
+    "miniboss_boss_bars:skeletosaurusbossbarentity",
+    "mocreatures:minigolem",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "orcz:snot",
     "specialmobs:motherspider",
     "pumpeddesertremake:bik",
@@ -501,6 +879,13 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "iceandfire:deathworm",
     "pumpeddesertremake:goodskeleton",
     "born_in_chaos_v1:supreme_bonescaller_not_despawn",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+    "mawabestiary:zombicator",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "mocreatures:ostrich",
     "terra_entity:truffle",
     "valarian_conquest:carriage",
@@ -512,7 +897,14 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "pumpeddesertremake:western_gohper_bayber",
     "orcz:decaystrikecustom",
     "terra_entity:goblin_peon",
+<<<<<<< HEAD
     "pirates:trader_captain",
+=======
+<<<<<<< HEAD
+    "pirates:trader_captain",
+=======
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "miniboss_boss_bars:versukenbossbarentity",
     "miniboss_boss_bars:thepregnantbossbarentity",
     "miniboss_boss_bars:supermoglerbossbarentity",
@@ -533,18 +925,40 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "mobz:boss_skeleton",
     "miniboss_boss_bars:spiderprowlerbossbarentity",
     "terra_entity:brain_fake",
+<<<<<<< HEAD
     "pots_and_mimics:poison_pot_crab",
+=======
+<<<<<<< HEAD
+    "pots_and_mimics:poison_pot_crab",
+=======
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "terra_entity:giant_worm",
     "glorious_creatures:christmas_horror",
     "mocreatures:frostscorpion",
     "world:kraken",
     "specialmobs:potionslime",
     "miniboss_boss_bars:firedragonbossbarentity",
+<<<<<<< HEAD
     "seadwellers:mermorph_river",
+=======
+<<<<<<< HEAD
+    "seadwellers:mermorph_river",
+=======
+    "aquaculture:perch",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "orcz:goblinsavagemace",
     "minecraft:illusioner",
     "world:cyclopss",
     "miniboss_boss_bars:blairthingbossbarentity",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+    "illager_additions:cowboy",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "terra_entity:rideable_slime",
     "specialmobs:strayskeleton",
     "pumpeddesertremake:wither_good_skeleton",
@@ -562,6 +976,13 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "miniboss_boss_bars:frostybossbarentity",
     "miniboss_boss_bars:firelordbossbarentity",
     "iter_rpg:magic_squid",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+    "aquaculture:arapaima",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "valarian_conquest:aegis_villager",
     "specialmobs:witherskeleton",
     "specialmobs:gravelcreeper",
@@ -582,8 +1003,19 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "mocreatures:angelfish",
     "valarian_conquest:aegis_commander",
     "creatures_expanded:fungal_ghoul",
+<<<<<<< HEAD
     "sakes_structures:prevention_field_generator",
     "terra_entity:eye_of_cthulhu",
+=======
+<<<<<<< HEAD
+    "sakes_structures:prevention_field_generator",
+    "terra_entity:eye_of_cthulhu",
+=======
+    "more_critters:nightshroom",
+    "terra_entity:eye_of_cthulhu",
+    "more_critters:scowl",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "terra_entity:i_32_iron_golem",
     "mocreatures:caveogre",
     "miniboss_boss_bars:solscarabmaximusbossbarentity",
@@ -597,6 +1029,13 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "world:appleant_2",
     "world:unicorn",
     "miniboss_boss_bars:parasitemotherbossbarentity",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+    "aquaculture:atlantic_cod",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "mocreatures:dragonfly",
     "minecraft:pufferfish",
     "mocreatures:manderin",
@@ -613,20 +1052,51 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "miniboss_boss_bars:coralgolembossbarentity",
     "born_in_chaos_v1:lord_pumpkinhead",
     "fantasyfauna:slime_blue",
+<<<<<<< HEAD
     "miniboss_boss_bars:gildedentbossbarentity",
     "creatures_expanded:undead_necromancer",
     "goblins_tyranny:champion_goblin",
+=======
+<<<<<<< HEAD
+    "miniboss_boss_bars:gildedentbossbarentity",
+    "creatures_expanded:undead_necromancer",
+    "goblins_tyranny:champion_goblin",
+=======
+    "unusualprehistory:stethacanthus",
+    "unusualprehistory:iceberg_mammoth",
+    "miniboss_boss_bars:gildedentbossbarentity",
+    "creatures_expanded:undead_necromancer",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "miniboss_boss_bars:witheredabominationbossbarentity",
     "threateningly_mobs:diplocaulus",
     "orcz:savagegoblin",
     "minecraft:polar_bear",
+<<<<<<< HEAD
     "piglet_structures:little_spike",
     "miniboss_boss_bars:boggedbonestalkerbossbarentity",
+=======
+<<<<<<< HEAD
+    "piglet_structures:little_spike",
+    "miniboss_boss_bars:boggedbonestalkerbossbarentity",
+=======
+    "more_critters:rollball",
+    "miniboss_boss_bars:boggedbonestalkerbossbarentity",
+    "more_critters:bubble_entity",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "quark:wraith",
     "miniboss_boss_bars:termitetunnelerqueenbossbarentity",
     "mocreatures:hellrat",
     "valarian_conquest:bohemian_guard",
+<<<<<<< HEAD
     "piglet_structures:screecher",
+=======
+<<<<<<< HEAD
+    "piglet_structures:screecher",
+=======
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "miniboss_boss_bars:illagerbladeknightbossbarentity",
     "miniboss_boss_bars:apotheosisepicbossbarentity",
     "born_in_chaos_v1:zombie_fisherman",
@@ -637,10 +1107,22 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "iter_rpg:grimhook",
     "tide:catfish",
     "the_pillager_legion_:gladiators_nether_tpl",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "bloxysstructures:mushroom_king",
     "terra_entity:cardinal",
     "pots_and_mimics:pot_crab",
     "terra_entity:eater_of_souls",
+<<<<<<< HEAD
+=======
+=======
+    "terra_entity:cardinal",
+    "terra_entity:eater_of_souls",
+    "unusualprehistory:baby_megatherium",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "specialmobs:blindingenderman",
     "valarian_conquest:bohemian_villager",
     "mocreatures:wwolf",
@@ -658,12 +1140,26 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "valarian_conquest:numerian_guard",
     "supplementaries:red_merchant",
     "orcz:goblinwerid",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+    "unusualprehistory:baby_barina",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "miniboss_boss_bars:shulkermimicbossbarentity",
     "miniboss_boss_bars:mutantwolfbossbarentity",
     "luminous_beasts:baby_phoenix",
     "creatures_expanded:swamp_skeleton",
     "miniboss_boss_bars:mekkronbossbarentity",
     "miniboss_boss_bars:headmasterbossbarentity",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+    "unusualprehistory:beelz",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "miniboss_boss_bars:wadjetbossbarentity",
     "terra_entity:goblin_sorcerer",
     "miniboss_boss_bars:abyssfangbossbarentity",
@@ -674,23 +1170,53 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "born_in_chaos_v1:sir_pumpkinhead",
     "mobz:small_zombie",
     "world:dragonfly_2",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+    "unusualprehistory:gigantopithicus",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "luminous_beasts:bone_stalker",
     "miniboss_boss_bars:draconicvoidlasherbossbarentity",
     "threateningly_mobs:nature_harmony",
     "luminous_beasts:phoenixbird",
     "specialmobs:fishingzombifiedpiglin",
+<<<<<<< HEAD
     "piglet_structures:flamey_spark",
     "miniboss_boss_bars:megajohnbossbarentity",
     "goblins_tyranny:merchant",
+=======
+<<<<<<< HEAD
+    "piglet_structures:flamey_spark",
+    "miniboss_boss_bars:megajohnbossbarentity",
+    "goblins_tyranny:merchant",
+=======
+    "miniboss_boss_bars:megajohnbossbarentity",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "bygonenether:corpor",
     "mocreatures:fox",
     "terra_entity:guide",
     "glorious_creatures:cubic_prison",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "piglet_structures:scrappy",
     "miniboss_boss_bars:teufelskerlbossbarentity",
     "tide:barracuda",
     "miniboss_boss_bars:corruptedcauldronbossbarentity",
     "goblins_tyranny:bard",
+<<<<<<< HEAD
+=======
+=======
+    "miniboss_boss_bars:teufelskerlbossbarentity",
+    "tide:barracuda",
+    "more_critters:critter_atlas_model",
+    "miniboss_boss_bars:corruptedcauldronbossbarentity",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "threateningly_mobs:titan_rabbit_re",
     "miniboss_boss_bars:skypharaohbossbarentity",
     "cardinal_sins:sinofenvyphase_1",
@@ -703,12 +1229,29 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "mobz:warrior",
     "miniboss_boss_bars:pyroknightbossbarentity",
     "mocreatures:stingray",
+<<<<<<< HEAD
     "hexalia:silk_moth_entity",
+=======
+<<<<<<< HEAD
+    "hexalia:silk_moth_entity",
+=======
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "born_in_chaos_v1:baby_skeleton",
     "terra_entity:ghost",
     "mocreatures:horsemob",
     "pumpeddesertremake:snake",
+<<<<<<< HEAD
     "terra_entity:base_bones",
+=======
+<<<<<<< HEAD
+    "terra_entity:base_bones",
+=======
+    "more_critters:snowflake_spider",
+    "terra_entity:base_bones",
+    "more_critters:critter_eater",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "miniboss_boss_bars:pyromancerbossbarentity",
     "the_pillager_legion_:mercenary_guard_tpl",
     "terra_entity:man_eater",
@@ -718,6 +1261,10 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "miniboss_boss_bars:mutantcreeperbossbarentity",
     "miniboss_boss_bars:moonpriestbossbarentity",
     "mocreatures:salmon",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "miniboss_boss_bars:roguemasterbossbarentity",
     "luminous_beasts:the_scarecrow",
     "creatures_expanded:anguished",
@@ -726,6 +1273,19 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "quickshot:gunpowder_slime_ball_entity",
     "luminous_beasts:rare_mummy",
     "bloxysstructures:cowlin",
+<<<<<<< HEAD
+=======
+=======
+    "peculiarpredators:troodon",
+    "miniboss_boss_bars:roguemasterbossbarentity",
+    "tameablebeasts:argentavis",
+    "luminous_beasts:the_scarecrow",
+    "creatures_expanded:anguished",
+    "mocreatures:fly",
+    "quickshot:gunpowder_slime_ball_entity",
+    "luminous_beasts:rare_mummy",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "mobz:spider_mage",
     "specialmobs:firesilverfish",
     "valarian_conquest:dwarven_elder",
@@ -752,11 +1312,23 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "pumpeddesertremake:red_snake_baybe",
     "orcz:witherstrikering",
     "ogres:ogre_vil_1x",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "piglet_structures:charging_garden_gnome_summon",
     "specialmobs:webspider",
     "legendary_monsters:haunted_guard",
     "valarian_conquest:valarian_archer",
     "piglet_structures:axe_stray",
+<<<<<<< HEAD
+=======
+=======
+    "specialmobs:webspider",
+    "legendary_monsters:haunted_guard",
+    "valarian_conquest:valarian_archer",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "miniboss_boss_bars:crabconstrictorbossbarentity",
     "iter_rpg:grim_boulder",
     "miniboss_boss_bars:spidersmotherbossbarentity",
@@ -769,15 +1341,36 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "miniboss_boss_bars:tempestgolembossbarentity",
     "terra_entity:brain_of_cthulhu",
     "mocreatures:boar",
+<<<<<<< HEAD
     "seadwellers:mermorph",
+=======
+<<<<<<< HEAD
+    "seadwellers:mermorph",
+=======
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "specialmobs:skeletoncreeper",
     "terra_entity:jungle_bat",
     "miniboss_boss_bars:yetibossbarentity",
     "world:bigtower_1en",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "mobs_of_mythology:sporeling",
     "creatures_expanded:brood_spider",
     "terramity:enchanter_merlin",
     "specialmobs:scopecreeper",
+<<<<<<< HEAD
+=======
+=======
+    "creatures_expanded:brood_spider",
+    "unusualprehistory:ulughbegsaurus",
+    "terramity:enchanter_merlin",
+    "specialmobs:scopecreeper",
+    "aquaculture:tuna",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "miniboss_boss_bars:witheredcultistbossbarentity",
     "born_in_chaos_v1:mr_pumpkin",
     "specialmobs:brutezombie",
@@ -787,25 +1380,62 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "miniboss_boss_bars:freakagerbossbarentity",
     "fantasyfauna:mushcap_red",
     "terramity:crystal_heart_ring",
+<<<<<<< HEAD
     "goblins_tyranny:coal_cave_goblin",
+=======
+<<<<<<< HEAD
+    "goblins_tyranny:coal_cave_goblin",
+=======
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "valarian_conquest:caladrian_cannon",
     "mobz:iron_steve",
     "mobz:charles",
     "specialmobs:plaguezombie",
     "miniboss_boss_bars:terradragonbossbarentity",
+<<<<<<< HEAD
     "specialmobs:puffersilverfish",
+=======
+<<<<<<< HEAD
+    "specialmobs:puffersilverfish",
+=======
+    "mawabestiary:sandspear_scorpion",
+    "specialmobs:puffersilverfish",
+    "mobcatalog:capybara",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "miniboss_boss_bars:mapinguaribossbarentity",
     "terra_entity:summon_netherite_sword",
     "terra_entity:duck",
     "minecraft:frog",
+<<<<<<< HEAD
     "piglet_structures:ancient_skeleton_warrior",
+=======
+<<<<<<< HEAD
+    "piglet_structures:ancient_skeleton_warrior",
+=======
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "specialmobs:enderman",
     "mocreatures:filchlizard",
     "specialmobs:kingghast",
     "mocreatures:dolphin",
     "medievalembroidery:direwolf",
+<<<<<<< HEAD
     "piglet_structures:ancient_forest_spirit",
     "illagerinvasion:marauder",
+=======
+<<<<<<< HEAD
+    "piglet_structures:ancient_forest_spirit",
+    "illagerinvasion:marauder",
+=======
+    "unusualprehistory:baby_smilodon",
+    "illagerinvasion:marauder",
+    "mawabestiary:necrophagous_iron_brawl",
+    "unusualprehistory:pachy",
+    "tameablebeasts:fur_golem",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "terra_entity:little_hornet",
     "terra_entity:hat_spore_zombie",
     "specialmobs:emberblaze",
@@ -820,7 +1450,14 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "threateningly_mobs:elite_zombie_warrior",
     "specialmobs:fishingdrowned",
     "valarian_conquest:orc_berserker",
+<<<<<<< HEAD
     "bloxysstructures:quantum_guardian",
+=======
+<<<<<<< HEAD
+    "bloxysstructures:quantum_guardian",
+=======
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "born_in_chaos_v1:decaying_zombie",
     "legendary_monsters:spiky_bug",
     "mocreatures:biggolem",
@@ -830,20 +1467,52 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "pumpeddesertremake:cactus_chekflower",
     "threateningly_mobs:saint",
     "miniboss_boss_bars:apotheosisrarebossbarentity",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+    "more_critters:opalcrab",
+    "aquaculture:minnow",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "threateningly_mobs:ferox_ice_worm",
     "miniboss_boss_bars:apotheosisuncommonbossbarentity",
     "miniboss_boss_bars:megablockbossbarentity",
     "miniboss_boss_bars:centipedeevictorbossbarentity",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+    "mawabestiary:snow_rider",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "specialmobs:blindingsilverfish",
     "iceandfire:dread_horse",
     "specialmobs:desiccatedsilverfish",
     "mobz:wasp",
     "legendary_monsters:dune_sentinel",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "miniboss_boss_bars:ravenousbossbarentity",
     "tide:tuna",
     "threateningly_mobs:ice_fairy",
     "iter_rpg:revenant",
     "terra_entity:eater_of_worlds",
+<<<<<<< HEAD
+=======
+=======
+    "more_critters:snek",
+    "miniboss_boss_bars:ravenousbossbarentity",
+    "tide:tuna",
+    "more_critters:blubberfish",
+    "threateningly_mobs:ice_fairy",
+    "iter_rpg:revenant",
+    "terra_entity:eater_of_worlds",
+    "aquaculture:gar",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "mocreatures:raccoon",
     "illagerinvasion:invoker",
     "born_in_chaos_v1:pumpkinhead",
@@ -855,6 +1524,13 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "terramity:virtue",
     "threateningly_mobs:guardian_statue",
     "bygonenether:piglin_prisoner",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+    "unusualprehistory:encrusted",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "iceandfire:myrmex_queen",
     "ddenizens:shadowlord",
     "terra_entity:bunny",
@@ -864,12 +1540,30 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "terramity:echo_bug",
     "iceandfire:ghost",
     "miniboss_boss_bars:lavaeaterbossbarentity",
+<<<<<<< HEAD
     "mobs_of_mythology:chupacabra",
     "miniboss_boss_bars:gumwormbossbarentity",
+=======
+<<<<<<< HEAD
+    "mobs_of_mythology:chupacabra",
+    "miniboss_boss_bars:gumwormbossbarentity",
+=======
+    "illager_additions:spearman",
+    "miniboss_boss_bars:gumwormbossbarentity",
+    "unusualprehistory:austroraptor",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "luminous_beasts:hermit_king",
     "raided:inquisitor",
     "terra_entity:dungeon_slime",
     "iter_rpg:damage_test",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+    "unusualprehistory:antarctopelta",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "glorious_creatures:living_gift",
     "iter_rpg:forest_vines",
     "pumpeddesertremake:red_fennec",
@@ -880,7 +1574,14 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "specialmobs:toughsilverfish",
     "valarian_conquest:kings_guard",
     "legendary_monsters:ancient_guardian",
+<<<<<<< HEAD
     "seadwellers:mermorph_architect",
+=======
+<<<<<<< HEAD
+    "seadwellers:mermorph_architect",
+=======
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "raided:savager",
     "valarian_conquest:visgothian_guard",
     "valarian_conquest:man_at_arms",
@@ -904,18 +1605,40 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "luminous_beasts:rare_sea_viper",
     "terra_entity:wall_of_flesh",
     "terra_entity:witch_doctor",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+    "unusualprehistory:smilodon",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "glorious_creatures:whisper_gc",
     "tide:clayfish",
     "mocreatures:duck",
     "born_in_chaos_v1:bonescaller",
     "glorious_creatures:elder_tribal_frog",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+    "oddorganisms:apthoroblattina",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "miniboss_boss_bars:archevokerbossbarentity",
     "miniboss_boss_bars:steelboarbossbarentity",
     "threateningly_mobs:wave_cannon",
     "specialmobs:madscientistzombie",
     "terra_entity:demolitionist",
+<<<<<<< HEAD
     "piglet_structures:mummy",
     "piglet_structures:ancient_skeleton_skull",
+=======
+<<<<<<< HEAD
+    "piglet_structures:mummy",
+    "piglet_structures:ancient_skeleton_skull",
+=======
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "miniboss_boss_bars:axethrowerbossbarentity",
     "specialmobs:witchspider",
     "valarian_conquest:aegis_dark_knight",
@@ -929,9 +1652,23 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "minecraft:wolf",
     "threateningly_mobs:rocky_cannon",
     "specialmobs:knightwitherskeleton",
+<<<<<<< HEAD
     "glorious_creatures:rebel_frog",
     "valarian_conquest:aegis_spearman",
     "born_in_chaos_v1:siamese_skeletonsleft",
+=======
+<<<<<<< HEAD
+    "glorious_creatures:rebel_frog",
+    "valarian_conquest:aegis_spearman",
+    "born_in_chaos_v1:siamese_skeletonsleft",
+=======
+    "oddorganisms:falcatus",
+    "glorious_creatures:rebel_frog",
+    "valarian_conquest:aegis_spearman",
+    "born_in_chaos_v1:siamese_skeletonsleft",
+    "aquaculture:pink_salmon",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "terra_entity:hornet",
     "born_in_chaos_v1:siamese_skeletonsright",
     "miniboss_boss_bars:corpsewarlockbossbarentity",
@@ -940,32 +1677,79 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "minecraft:horse",
     "miniboss_boss_bars:feroxicewormbossbarentity",
     "specialmobs:ninjaskeleton",
+<<<<<<< HEAD
     "piglet_structures:wheatbug",
+=======
+<<<<<<< HEAD
+    "piglet_structures:wheatbug",
+=======
+    "unusualprehistory:trike",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "creatures_expanded:crumbling_skeleton",
     "mobz:lava_golem",
     "legendarycreatures:wisp",
     "minecraft:llama",
+<<<<<<< HEAD
     "mobs_of_mythology:kobold",
+=======
+<<<<<<< HEAD
+    "mobs_of_mythology:kobold",
+=======
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "creatures_expanded:crystalline_spider",
     "orcz:invinciblespore",
     "terra_entity:terraprisma",
     "world:statue_2",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "miniboss_boss_bars:theprowlerbossbarentity",
     "mocreatures:plainmanticore",
     "terra_entity:skeletron_hand",
     "piglet_structures:chair_seat",
     "world:mine_2",
+<<<<<<< HEAD
+=======
+=======
+    "more_critters:bomb_jelly_medium",
+    "miniboss_boss_bars:theprowlerbossbarentity",
+    "mocreatures:plainmanticore",
+    "tameablebeasts:quetzalcoatlus",
+    "terra_entity:skeletron_hand",
+    "world:mine_2",
+    "illager_additions:beamloger",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "miniboss_boss_bars:overgrowncolossusbossbarentity",
     "specialmobs:palespider",
     "miniboss_boss_bars:ancientguardianbossbarentity",
     "legendary_monsters:shulker_mimic",
     "iter_rpg:carcass",
     "glorious_creatures:vampire",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "bygonenether:warped_enderman",
     "world:oldvampire",
     "piglet_structures:garden_guardian",
     "specialmobs:stickymagmacube",
     "glorious_creatures:fire_spirit",
+<<<<<<< HEAD
+=======
+=======
+    "more_critters:dunger",
+    "bygonenether:warped_enderman",
+    "world:oldvampire",
+    "specialmobs:stickymagmacube",
+    "unusualprehistory:hwachavenator",
+    "glorious_creatures:fire_spirit",
+    "unusualprehistory:baby_giganto",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "iter_rpg:giant_spider",
     "terra_entity:luminous_slime",
     "born_in_chaos_v1:baby_spider",
@@ -979,26 +1763,65 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "legendary_monsters:ambusher",
     "miniboss_boss_bars:soulknightbossbarentity",
     "fantasyfauna:eye_bat",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+    "mawabestiary:undead_polar_bear",
+    "unusualprehistory:majunga",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "quark:crab",
     "terra_entity:goblin_thief",
     "valarian_conquest:gardonian_king",
     "specialmobs:brutezombifiedpiglin",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "iter_rpg:marrow_mite",
     "luminous_beasts:rare_hermit_king",
     "pots_and_mimics:nether_pot_crab",
     "piglet_structures:blaze_spark",
     "piglet_structures:skeleton_fly",
     "threateningly_mobs:solscarab_maximus",
+<<<<<<< HEAD
+=======
+=======
+    "more_critters:large_echo",
+    "iter_rpg:marrow_mite",
+    "luminous_beasts:rare_hermit_king",
+    "threateningly_mobs:solscarab_maximus",
+    "mawabestiary:slave_ghost",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "valarian_conquest:galician_guard",
     "miniboss_boss_bars:crabtilusbossbarentity",
     "terra_entity:yoyos_projectile",
     "specialmobs:fighterghast",
     "mocreatures:grizzlybear",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "piglet_structures:stormy_slime",
     "raided:incinerator",
     "cardinal_sins:stonewarrior",
     "mobz:overgrown_skeleton",
     "terra_entity:dye_trader",
+<<<<<<< HEAD
+=======
+=======
+    "more_critters:shock_cube",
+    "oddorganisms:borealopelta",
+    "raided:incinerator",
+    "cardinal_sins:stonewarrior",
+    "mobz:overgrown_skeleton",
+    "more_critters:ancient_skeleton",
+    "terra_entity:dye_trader",
+    "more_critters:balloon_rat",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "terra_entity:nymph",
     "specialmobs:hungryzombie",
     "iter_rpg:chaos_apparition",
@@ -1007,6 +1830,10 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "glorious_creatures:ancient_samurai",
     "bookwyrms:book_wyrm",
     "mocreatures:turkey",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "goblins_tyranny:wanderer_goblin",
     "miniboss_boss_bars:bigorcbossbossbarentity",
     "specialmobs:skeleton",
@@ -1014,15 +1841,41 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "specialmobs:joltblaze",
     "ddenizens:skeleton_warrior",
     "terra_entity:wall_of_flesh_mouth",
+<<<<<<< HEAD
+=======
+=======
+    "miniboss_boss_bars:bigorcbossbossbarentity",
+    "specialmobs:skeleton",
+    "specialmobs:joltblaze",
+    "ddenizens:skeleton_warrior",
+    "terra_entity:wall_of_flesh_mouth",
+    "unusualprehistory:anuro",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "miniboss_boss_bars:guardianofthedeepbossbarentity",
     "iceandfire:dread_knight",
     "world:tornadosmall",
     "born_in_chaos_v1:krampus",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+    "more_critters:shimmerwing",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "born_in_chaos_v1:siamese_skeletons",
     "miniboss_boss_bars:rumiabossbarentity",
     "miniboss_boss_bars:wendigobossbarentity",
     "iter_rpg:pebblehead",
+<<<<<<< HEAD
     "goblins_tyranny:shaman_goblin",
+=======
+<<<<<<< HEAD
+    "goblins_tyranny:shaman_goblin",
+=======
+    "aquaculture:tambaqui",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "mocreatures:mole",
     "world:centaur",
     "pumpeddesertremake:tumbleweed",
@@ -1034,6 +1887,14 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "mocreatures:cod",
     "miniboss_boss_bars:conjurerbossbarentity",
     "miniboss_boss_bars:aeroguardianbossbarentity",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+    "aquaculture:brown_shrooma",
+    "more_critters:bunbug",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "glorious_creatures:zombie_frog",
     "miniboss_boss_bars:beasthorseshoecrabbossbarentity",
     "cardinal_sins:warriorofash",
@@ -1045,12 +1906,30 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "terramity:ultra_sniffer",
     "creatures_expanded:living_skull",
     "mobz:knight",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+    "more_critters:web_entity",
+    "unusualprehistory:palaeophis",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "terra_entity:tomb_crawler",
     "miniboss_boss_bars:windknightbossbarentity",
     "quark:foxhound",
     "threateningly_mobs:tamed_forest_drake",
     "threateningly_mobs:knowledge_fairy",
+<<<<<<< HEAD
     "world:whale_1block",
+=======
+<<<<<<< HEAD
+    "world:whale_1block",
+=======
+    "mawabestiary:veteran_zombicator",
+    "world:whale_1block",
+    "mawabestiary:galvanizer",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "born_in_chaos_v1:fallen_chaos_knight",
     "minecraft:ravager",
     "world:golden_light_dragon",
@@ -1079,6 +1958,10 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "miniboss_boss_bars:gulingsentinelheavybossbarentity",
     "terra_entity:big_helmet_anger_bones",
     "specialmobs:undeadwitch",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "legendary_monsters:cloud_golem",
     "luminous_beasts:the_furnace",
     "specialmobs:plaguezombifiedpiglin",
@@ -1088,6 +1971,30 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "luminous_beasts:rare_phoenix_bird",
     "miniboss_boss_bars:shinyundeadbossbarentity",
     "born_in_chaos_v1:bloody_gadfly",
+<<<<<<< HEAD
+=======
+=======
+    "more_critters:model_4",
+    "legendary_monsters:cloud_golem",
+    "more_critters:model_5",
+    "more_critters:model_2",
+    "luminous_beasts:the_furnace",
+    "more_critters:model_3",
+    "more_critters:model_8",
+    "more_critters:model_9",
+    "more_critters:model_6",
+    "more_critters:model_7",
+    "more_critters:kelpire",
+    "more_critters:model_1",
+    "specialmobs:plaguezombifiedpiglin",
+    "threateningly_mobs:nature_fairy",
+    "valarian_conquest:bandit_1",
+    "luminous_beasts:rare_phoenix_bird",
+    "miniboss_boss_bars:shinyundeadbossbarentity",
+    "born_in_chaos_v1:bloody_gadfly",
+    "more_critters:mori_roots",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "terra_entity:the_hungry",
     "specialmobs:creeper",
     "specialmobs:windwitch",
@@ -1099,13 +2006,30 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "orcz:wither_strikeringcustom",
     "luminous_beasts:sea_viper",
     "miniboss_boss_bars:bludbossbarentity",
+<<<<<<< HEAD
     "piglet_structures:driller",
     "miniboss_boss_bars:shamanmonkeybossbarentity",
+=======
+<<<<<<< HEAD
+    "piglet_structures:driller",
+    "miniboss_boss_bars:shamanmonkeybossbarentity",
+=======
+    "miniboss_boss_bars:shamanmonkeybossbarentity",
+    "oddorganisms:eolactoria",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "mobz:stone_golem",
     "terra_entity:demon",
     "mobz:baby_ravager",
     "luminous_beasts:vile_gator",
     "miniboss_boss_bars:drakarabossbarentity",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+    "tameablebeasts:tameable_penguin",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "terra_entity:sculk_wisp",
     "miniboss_boss_bars:lightningcallerbossbarentity",
     "miniboss_boss_bars:cyborgvindicatorbossbarentity",
@@ -1119,6 +2043,13 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "iter_rpg:insatiable",
     "iter_rpg:unbound_soul",
     "miniboss_boss_bars:basaltwyvernbossbarentity",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+    "more_critters:bomb_jelly_small",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "minecraft:zombie_villager",
     "miniboss_boss_bars:farmmonstrositybossbarentity",
     "iter_rpg:mudkin",
@@ -1127,11 +2058,22 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "minecraft:giant",
     "world:gravehero",
     "specialmobs:jumpingcreeper",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+    "aquaculture:atlantic_herring",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "luminous_beasts:stalker",
     "miniboss_boss_bars:sirpumpkinheadbossbarentity",
     "specialmobs:lightningcreeper",
     "miniboss_boss_bars:orcbossbossbarentity",
     "illagerinvasion:sorcerer",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "terra_entity:jungle_slime",
     "luminous_beasts:witch_doctor",
     "mocreatures:wraith",
@@ -1140,6 +2082,21 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "terra_entity:goblin_warrior",
     "valarian_conquest:galician_king",
     "piglet_structures:kwik_salesman_plains",
+<<<<<<< HEAD
+=======
+=======
+    "unusualprehistory:iceberg_smilodon",
+    "terra_entity:jungle_slime",
+    "more_critters:mightshroom",
+    "luminous_beasts:witch_doctor",
+    "mocreatures:wraith",
+    "minecraft:husk",
+    "tameablebeasts:beetle_drone",
+    "world:bigtower_2en",
+    "terra_entity:goblin_warrior",
+    "valarian_conquest:galician_king",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "world:wingseye",
     "glorious_creatures:skull_obaba",
     "born_in_chaos_v1:firelight_not_despawn",
@@ -1159,35 +2116,75 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "orcz:goblincammo",
     "specialmobs:fishingsilverfish",
     "mocreatures:dirtscorpion",
+<<<<<<< HEAD
     "goblins_tyranny:iron_cave_goblin",
+=======
+<<<<<<< HEAD
+    "goblins_tyranny:iron_cave_goblin",
+=======
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "miniboss_boss_bars:tofugandlembossbarentity",
     "ddenizens:shadow",
     "terra_entity:giant_shelly",
     "myths_of_the_sea:hippocampus",
     "iter_rpg:griever",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "goblins_tyranny:knight_goblin",
     "seadwellers:mermorph_farmer",
     "glorious_creatures:psychic_anomaly",
     "terra_entity:pink_slime",
+<<<<<<< HEAD
+=======
+=======
+    "glorious_creatures:psychic_anomaly",
+    "terra_entity:pink_slime",
+    "aquaculture:jellyfish",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "miniboss_boss_bars:endergolembossbarentity",
     "specialmobs:armoredblaze",
     "creatures_expanded:pointed_dripstone_spike",
     "threateningly_mobs:mega_aphid",
     "threateningly_mobs:flamelarva",
     "ddenizens:ghoul",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+    "unusualprehistory:dunk",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "valarian_conquest:catapult",
     "miniboss_boss_bars:endermonstrositybossbarentity",
     "miniboss_boss_bars:mutantskeletonbossbarentity",
     "mocreatures:mediumfish",
     "born_in_chaos_v1:infernal_spirit",
     "threateningly_mobs:forest_drake",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+    "aquaculture:blackfish",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "mobz:honey_slime",
     "minecraft:parrot",
     "valarian_conquest:numerian_spearman",
     "valarian_conquest:dwarven_guard",
     "terramity:shadowflame_ring",
     "valarian_conquest:caladrian_archer",
+<<<<<<< HEAD
     "bloxysstructures:void_walkers",
+=======
+<<<<<<< HEAD
+    "bloxysstructures:void_walkers",
+=======
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "burrowers:chief_burrower",
     "specialmobs:silverfish",
     "world:nimfa",
@@ -1195,10 +2192,21 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "mobz:illusioner",
     "iceandfire:sea_serpent",
     "terra_entity:nurse",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "bloxysstructures:prince_of_darkness",
     "mocreatures:fishy",
     "terra_entity:hell_bat",
     "piglet_structures:charging_garden_gnome",
+<<<<<<< HEAD
+=======
+=======
+    "mocreatures:fishy",
+    "terra_entity:hell_bat",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "world:ghoul",
     "miniboss_boss_bars:unboundafritbossbarentity",
     "specialmobs:zombie",
@@ -1212,36 +2220,80 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "specialmobs:thiefenderman",
     "specialmobs:ghast",
     "miniboss_boss_bars:capelobobossbarentity",
+<<<<<<< HEAD
     "piglet_structures:kwik_salesman_ocean",
     "terra_entity:traveling_merchant",
+=======
+<<<<<<< HEAD
+    "piglet_structures:kwik_salesman_ocean",
+    "terra_entity:traveling_merchant",
+=======
+    "terra_entity:traveling_merchant",
+    "aquaculture:synodontis",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "creatures_expanded:gargoyle",
     "miniboss_boss_bars:vampirebaronbossbarentity",
     "specialmobs:frozendrowned",
     "valarian_conquest:aegis_female_villager",
     "terra_entity:yellow_slime",
     "terra_entity:wandering_eye_fish",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "progressivebosses:wither",
     "miniboss_boss_bars:spiderreaperbossbarentity",
     "specialmobs:palecavespider",
     "piglet_structures:mineral_scorpio",
+<<<<<<< HEAD
+=======
+=======
+    "unusualprehistory:baby_brachi",
+    "progressivebosses:wither",
+    "tameablebeasts:giant_roly_poly",
+    "miniboss_boss_bars:spiderreaperbossbarentity",
+    "specialmobs:palecavespider",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "world:well",
     "humancompanions:archer",
     "valarian_conquest:caladrian_female_villager",
     "orcz:squig",
     "miniboss_boss_bars:possessedpaladinbossbarentity",
     "iter_rpg:small_scallop",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "terramity:decoy",
     "terra_entity:merchant",
     "piglet_structures:lumberer",
     "mobz:frost_blaze",
     "humancompanions:knight",
     "terramity:macro_black_hole_bomb_entity",
+<<<<<<< HEAD
+=======
+=======
+    "tameablebeasts:giant_grasshopper",
+    "terramity:decoy",
+    "terra_entity:merchant",
+    "mobz:frost_blaze",
+    "humancompanions:knight",
+    "terramity:macro_black_hole_bomb_entity",
+    "peculiarpredators:shasta",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "orcz:bannerman",
     "terra_entity:voodoo_demon",
     "miniboss_boss_bars:redmummybossbarentity",
     "specialmobs:hungryzombifiedpiglin",
     "mobz:soul_creeper",
     "luminous_beasts:ember",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "pirates:shipmate_1",
     "miniboss_boss_bars:hermitkingbossbarentity",
     "goblins_tyranny:gold_cave_goblin",
@@ -1250,12 +2302,29 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "pirates:shipmate_3",
     "terramity:elite_skeleton",
     "pirates:shipmate_2",
+<<<<<<< HEAD
+=======
+=======
+    "miniboss_boss_bars:hermitkingbossbarentity",
+    "tameablebeasts:scarecrow_allay",
+    "valarian_conquest:lancastian_spearman",
+    "miniboss_boss_bars:spidermothdwellerbossbarentity",
+    "terramity:elite_skeleton",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "enchanted:familiar_cat",
     "born_in_chaos_v1:restless_spirit",
     "terra_entity:green_dumpling_slime",
     "mocreatures:flamewraith",
     "world:dryadhouse",
+<<<<<<< HEAD
     "goblins_tyranny:engineer_goblin",
+=======
+<<<<<<< HEAD
+    "goblins_tyranny:engineer_goblin",
+=======
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "threateningly_mobs:lich_re",
     "miniboss_boss_bars:ignitedrevenantbossbarentity",
     "mocreatures:fireogre",
@@ -1263,7 +2332,14 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "threateningly_mobs:beast_horseshoe_crab",
     "valarian_conquest:gardonian_villager",
     "specialmobs:fireskeleton",
+<<<<<<< HEAD
     "bloxysstructures:bloxy",
+=======
+<<<<<<< HEAD
+    "bloxysstructures:bloxy",
+=======
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "luminous_beasts:soul_furnace",
     "mobz:ender",
     "specialmobs:spitfirewitherskeleton",
@@ -1280,7 +2356,14 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "iceandfire:dread_scuttler",
     "valarian_conquest:caladrian_knight",
     "specialmobs:hungrydrowned",
+<<<<<<< HEAD
     "goblins_tyranny:goblin_hunter",
+=======
+<<<<<<< HEAD
+    "goblins_tyranny:goblin_hunter",
+=======
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "born_in_chaos_v1:seared_spirit",
     "valarian_conquest:lancastian_villager",
     "specialmobs:giantskeleton",
@@ -1291,8 +2374,19 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "born_in_chaos_v1:decaying_zombie_not_despawn",
     "specialmobs:lemonslime",
     "minecraft:zoglin",
+<<<<<<< HEAD
     "miniboss_boss_bars:cryomancerbossbarentity",
     "goblins_tyranny:blacksmith_goblin",
+=======
+<<<<<<< HEAD
+    "miniboss_boss_bars:cryomancerbossbarentity",
+    "goblins_tyranny:blacksmith_goblin",
+=======
+    "mawabestiary:ghabenh_zombie",
+    "aquaculture:piranha",
+    "miniboss_boss_bars:cryomancerbossbarentity",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "mocreatures:greenogre",
     "terramity:antimatter_supernova",
     "orcz:orcshield",
@@ -1301,12 +2395,23 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "terra_entity:undead_viking",
     "miniboss_boss_bars:superspookbossbarentity",
     "miniboss_boss_bars:lightningdragonbossbarentity",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+    "tameablebeasts:ground_beetle",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "miniboss_boss_bars:brutaliserbossbarentity",
     "miniboss_boss_bars:goldenhermitkingbossbarentity",
     "illagerinvasion:archivist",
     "specialmobs:hungryspider",
     "mocreatures:goldfish",
     "ddenizens:fossilized_skeleton",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "fantasyfauna:mossolith",
     "legendary_monsters:skeletosaurus",
     "piglet_structures:armored_garden_gnome",
@@ -1323,11 +2428,41 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "miniboss_boss_bars:yellowbossbossbarentity",
     "valarian_conquest:visgothian_female_v_illager",
     "piglet_structures:chocolate_cow",
+<<<<<<< HEAD
+=======
+=======
+    "more_critters:jelly_torpedo",
+    "fantasyfauna:mossolith",
+    "legendary_monsters:skeletosaurus",
+    "legendary_monsters:lava_eater",
+    "miniboss_boss_bars:obsidianmonstrositybossbarentity",
+    "iceandfire:gorgon",
+    "valarian_conquest:legion_commander",
+    "more_critters:cubefrog",
+    "terra_entity:summon_diamond_sword",
+    "terra_entity:visual_neuron",
+    "specialmobs:witchcavespider",
+    "more_critters:fungal_zombie",
+    "world:goblin_2",
+    "more_critters:warptrap",
+    "minecraft:sniffer",
+    "miniboss_boss_bars:yellowbossbossbarentity",
+    "valarian_conquest:visgothian_female_v_illager",
+    "unusualprehistory:baby_megalania",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "mocreatures:deer",
     "miniboss_boss_bars:mutantendermanbossbarentity",
     "terramity:sniffer_kamehameha",
     "terra_entity:summon_imp",
     "world:ent",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+    "more_critters:baby_bunbug",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "miniboss_boss_bars:stonewarriorbossbarentity",
     "cardinal_sins:goldenminionofgreed",
     "iter_rpg:fiend",
@@ -1335,9 +2470,24 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "miniboss_boss_bars:aridguardianbossbarentity",
     "born_in_chaos_v1:missioner",
     "mocreatures:roach",
+<<<<<<< HEAD
     "miniboss_boss_bars:witchdoctorbossbarentity",
     "specialmobs:blackberryslime",
     "miniboss_boss_bars:battletowerguardianbossbarentity",
+=======
+<<<<<<< HEAD
+    "miniboss_boss_bars:witchdoctorbossbarentity",
+    "specialmobs:blackberryslime",
+    "miniboss_boss_bars:battletowerguardianbossbarentity",
+=======
+    "more_critters:frightshroom",
+    "miniboss_boss_bars:witchdoctorbossbarentity",
+    "specialmobs:blackberryslime",
+    "miniboss_boss_bars:battletowerguardianbossbarentity",
+    "tameablebeasts:tameable_beetle",
+    "unusualprehistory:megalania",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "born_in_chaos_v1:mother_spider",
     "illagerinvasion:necromancer",
     "glorious_creatures:demonic_general",
@@ -1351,11 +2501,25 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "kobolds:kobold_6",
     "born_in_chaos_v1:riding_felsteed",
     "orcz:orcsavage_2sword",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+    "aquaculture:bayad",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "specialmobs:dirtcreeper",
     "born_in_chaos_v1:skeleton_demoman",
     "world:cyclopssleep",
     "trolls:troll_villager_3x",
     "luminous_beasts:pumpkin_minion",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+    "unusualprehistory:baby_mammoth",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "kobolds:kobold_5",
     "kobolds:kobold_4",
     "kobolds:kobold_3",
@@ -1363,17 +2527,36 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "kobolds:kobold_2",
     "valarian_conquest:valarian_raider",
     "miniboss_boss_bars:possessedwardenbossbarentity",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+    "mawabestiary:slave_gem",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "specialmobs:abyssaldrowned",
     "valarian_conquest:caladrian_officer",
     "terra_entity:goblin_scout",
     "legendary_monsters:haunted_knight",
     "threateningly_mobs:re_rock_snail",
     "glorious_creatures:krampus",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "homeless_illager:homeless_illager",
     "minecraft:bee",
     "miniboss_boss_bars:hydrabossbarentity",
     "specialmobs:mothercavespider",
     "piglet_structures:the_redstone_small",
+<<<<<<< HEAD
+=======
+=======
+    "minecraft:bee",
+    "miniboss_boss_bars:hydrabossbarentity",
+    "specialmobs:mothercavespider",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "miniboss_boss_bars:battletowergolembossbarentity",
     "born_in_chaos_v1:dread_hound",
     "world:ehb_6",
@@ -1382,14 +2565,33 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "mobz:ender_knight",
     "threateningly_mobs:ice_fairy_guardian",
     "world:balllighing",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+    "unusualprehistory:megatherium",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "glorious_creatures:piglin_challenger",
     "luminous_beasts:yeti",
     "glorious_creatures:pilim",
     "minecraft:drowned",
     "miniboss_boss_bars:supremebonescallerbossbarentity",
+<<<<<<< HEAD
     "piglet_structures:ancient_skeleton_rogue",
     "iter_rpg:dwarf",
     "miniboss_boss_bars:titanbossbarentity",
+=======
+<<<<<<< HEAD
+    "piglet_structures:ancient_skeleton_rogue",
+    "iter_rpg:dwarf",
+    "miniboss_boss_bars:titanbossbarentity",
+=======
+    "iter_rpg:dwarf",
+    "miniboss_boss_bars:titanbossbarentity",
+    "oddorganisms:leptictidium",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "mocreatures:lion",
     "valarian_conquest:draugr_spearman",
     "the_pillager_legion_:veteran_infantryman_tpl",
@@ -1408,16 +2610,33 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "threateningly_mobs:flame_horn",
     "pumpeddesertremake:baybe_snake",
     "born_in_chaos_v1:glutton_fish",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "mobz:armored_zombie",
     "tide:sailfish",
     "valarian_conquest:dwarven_spearman",
     "goblins_tyranny:leader_goblin",
+<<<<<<< HEAD
+=======
+=======
+    "mobcatalog:sloth",
+    "mobz:armored_zombie",
+    "tide:sailfish",
+    "valarian_conquest:dwarven_spearman",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "legendary_monsters:bomber",
     "mocreatures:lither",
     "specialmobs:runicenderman",
     "terramity:thunker",
     "luminous_beasts:piglin_executioner",
     "creatures_expanded:soulbound_sentinel",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "goblins_tyranny:goblin_huntsman",
     "miniboss_boss_bars:summonerbossbarentity",
     "bloxysstructures:quantum_mage",
@@ -1426,10 +2645,27 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "valarian_conquest:legion_guard",
     "threateningly_mobs:giant_seacucumber",
     "mobs_of_mythology:kobold_warrior",
+<<<<<<< HEAD
+=======
+=======
+    "miniboss_boss_bars:summonerbossbarentity",
+    "peculiarpredators:baby_shasta",
+    "miniboss_boss_bars:thescarecrowbossbarentity",
+    "aquaculture:starshell_turtle",
+    "more_critters:iropod",
+    "minecraft:fox",
+    "valarian_conquest:legion_guard",
+    "threateningly_mobs:giant_seacucumber",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "born_in_chaos_v1:firelight",
     "iter_rpg:harvest_spiral",
     "threateningly_mobs:horsehoecrab_egg",
     "world:goblinshaman",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "piglet_structures:the_bricker",
     "deadlydinos:utahraptor",
     "iter_rpg:bloated",
@@ -1437,6 +2673,18 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "valarian_conquest:aegis_archer",
     "born_in_chaos_v1:zombie_lumberjack",
     "orcz:goblinshield",
+<<<<<<< HEAD
+=======
+=======
+    "iter_rpg:bloated",
+    "creatures_expanded:roots",
+    "valarian_conquest:aegis_archer",
+    "unusualprehistory:eryon",
+    "born_in_chaos_v1:zombie_lumberjack",
+    "orcz:goblinshield",
+    "tameablebeasts:tameable_chikote",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "the_pillager_legion_:archer_nether_tpl",
     "legendary_monsters:warped_fungussus",
     "miniboss_boss_bars:missionarybossbarentity",
@@ -1447,6 +2695,13 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "orc_hut:orc",
     "miniboss_boss_bars:ancientdemonlordbossbarentity",
     "mocreatures:darkmanticore",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+    "aquaculture:brown_trout",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "minecraft:turtle",
     "mocreatures:clownfish",
     "valarian_conquest:aegis_knight",
@@ -1455,6 +2710,10 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "terra_entity:dryad",
     "terra_entity:tropic_slime",
     "miniboss_boss_bars:regalhartbossbarentity",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "mobz:andriu",
     "legendary_monsters:frostbitten_golem",
     "specialmobs:vampirezombifiedpiglin",
@@ -1463,6 +2722,27 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "miniboss_boss_bars:frostbittengolembossbarentity",
     "miniboss_boss_bars:arthropleuraabominationbossbarentity",
     "miniboss_boss_bars:eyeguardiangolembossbarentity",
+<<<<<<< HEAD
+=======
+=======
+    "more_critters:model_10",
+    "mobz:andriu",
+    "more_critters:model_12",
+    "legendary_monsters:frostbitten_golem",
+    "more_critters:model_11",
+    "more_critters:model_14",
+    "more_critters:model_13",
+    "specialmobs:vampirezombifiedpiglin",
+    "born_in_chaos_v1:controlled_baby_skeleton",
+    "more_critters:model_16",
+    "ddenizens:iron_skeleton",
+    "more_critters:model_15",
+    "miniboss_boss_bars:frostbittengolembossbarentity",
+    "miniboss_boss_bars:arthropleuraabominationbossbarentity",
+    "miniboss_boss_bars:eyeguardiangolembossbarentity",
+    "oddorganisms:dawn_horse",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "luminous_beasts:horseless_headsman",
     "tide:angelfish",
     "miniboss_boss_bars:tremorzillabossbarentity",
@@ -1475,6 +2755,13 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "born_in_chaos_v1:dread_hound_not_despawn",
     "terra_entity:red_slime",
     "specialmobs:brutedrowned",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+    "unusualprehistory:veloci",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "mobz:black_bear",
     "terra_entity:short_bones",
     "specialmobs:fishingzombie",
@@ -1490,7 +2777,14 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "luminous_beasts:rare_tree_ent",
     "specialmobs:unholyghast",
     "minecraft:bat",
+<<<<<<< HEAD
     "seadwellers:mermorph_coral_yellow",
+=======
+<<<<<<< HEAD
+    "seadwellers:mermorph_coral_yellow",
+=======
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "mobz:tank_zombie",
     "iceandfire:amphithere",
     "legendary_monsters:knights_armor",
@@ -1498,7 +2792,14 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "world:statueunicorn",
     "pumpeddesertremake:saxuljaybaybe",
     "mocreatures:elephant",
+<<<<<<< HEAD
     "bloxysstructures:cowlin_brute",
+=======
+<<<<<<< HEAD
+    "bloxysstructures:cowlin_brute",
+=======
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "mobz:golden_chicken",
     "specialmobs:bouncingmagmacube",
     "miniboss_boss_bars:hindenburgbossbarentity",
@@ -1524,6 +2825,13 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "threateningly_mobs:the_regalhart",
     "iceandfire:hippogryph",
     "glorious_creatures:great_boar",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+    "unusualprehistory:sludge",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "specialmobs:shadowswitch",
     "terramity:black_hole_bomb_entity",
     "terra_entity:swamp_slime",
@@ -1543,9 +2851,19 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "born_in_chaos_v1:maggot",
     "pumpeddesertremake:scorpion",
     "iter_rpg:solsphere",
+<<<<<<< HEAD
     "seadwellers:mermorph_cavern",
     "terra_entity:evil_slime",
     "bloxysstructures:giant_wolf",
+=======
+<<<<<<< HEAD
+    "seadwellers:mermorph_cavern",
+    "terra_entity:evil_slime",
+    "bloxysstructures:giant_wolf",
+=======
+    "terra_entity:evil_slime",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "miniboss_boss_bars:piglinexecutionerbossbarentity",
     "luminous_beasts:rare_executioner",
     "orcz:decaystrike",
@@ -1557,8 +2875,19 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "miniboss_boss_bars:endersentbossbarentity",
     "miniboss_boss_bars:superlunarianbossbarentity",
     "mocreatures:firefly",
+<<<<<<< HEAD
     "goblins_tyranny:droblin",
     "valarian_conquest:galician_spearman",
+=======
+<<<<<<< HEAD
+    "goblins_tyranny:droblin",
+    "valarian_conquest:galician_spearman",
+=======
+    "valarian_conquest:galician_spearman",
+    "unusualprehistory:rex",
+    "unusualprehistory:talpanas",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "miniboss_boss_bars:tremorsaurusbossbarentity",
     "quickshot:grapple_anker",
     "myths_of_the_sea:leviathan",
@@ -1604,16 +2933,36 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "orcz:orcsavage_2swordiron",
     "mobz:fiora",
     "iter_rpg:debug_mobmorph",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+    "more_critters:shriekbat",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "legendary_monsters:guard",
     "valarian_conquest:caladrian_king",
     "iter_rpg:star_worm",
     "mocreatures:piranha",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "bloxysstructures:giant_sniffer",
     "terra_entity:female_angler",
     "bloxysstructures:purple_lightning_shockwave",
     "world:goblin",
     "seadwellers:mermorph_hunter",
     "world:appleent",
+<<<<<<< HEAD
+=======
+=======
+    "terra_entity:female_angler",
+    "world:goblin",
+    "world:appleent",
+    "unusualprehistory:scau",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "iter_rpg:axebeak",
     "threateningly_mobs:flamestorm",
     "orcz:goblinsavagebomb",
@@ -1630,12 +2979,26 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "specialmobs:giantwitherskeleton",
     "burrowers:burrower",
     "threateningly_mobs:ferox_death_worm",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+    "aquaculture:smallmouth_bass",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "valarian_conquest:gardonian_guard",
     "mobz:blue_spider",
     "world:giantsavage",
     "miniboss_boss_bars:magispellerbossbarentity",
     "mocreatures:manticore",
+<<<<<<< HEAD
     "piglet_structures:compost_fairy",
+=======
+<<<<<<< HEAD
+    "piglet_structures:compost_fairy",
+=======
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "mobz:lost_skeleton",
     "specialmobs:flyingspider",
     "specialmobs:drowningcreeper",
@@ -1650,9 +3013,24 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "miniboss_boss_bars:gazenbreacherbossbarentity",
     "creatures_expanded:embersmog",
     "terra_entity:fire_imp",
+<<<<<<< HEAD
     "luminous_beasts:woodland_witch_doctor",
     "luminous_beasts:rare_bone_stalker",
     "medievalembroidery:fanged_elk",
+=======
+<<<<<<< HEAD
+    "luminous_beasts:woodland_witch_doctor",
+    "luminous_beasts:rare_bone_stalker",
+    "medievalembroidery:fanged_elk",
+=======
+    "more_critters:avoider",
+    "luminous_beasts:woodland_witch_doctor",
+    "luminous_beasts:rare_bone_stalker",
+    "illager_additions:royal_guard_spearman",
+    "medievalembroidery:fanged_elk",
+    "more_critters:baby_bouncelizard",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "pumpeddesertremake:fennec_baybe",
     "born_in_chaos_v1:phantom_bomb_entity",
     "valarian_conquest:draugr_knight",
@@ -1662,6 +3040,13 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "threateningly_mobs:riptooth",
     "specialmobs:watermelonslime",
     "legendary_monsters:hovering_hurricane",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+    "aquaculture:red_shrooma",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "cardinal_sins:skeletonofgluttony",
     "valarian_conquest:draugr_archer",
     "born_in_chaos_v1:swarmer",
@@ -1681,7 +3066,14 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "bygonenether:wraither",
     "pumpeddesertremake:the_desert_western_gopher",
     "legendary_monsters:posessed_paladin",
+<<<<<<< HEAD
     "goblins_tyranny:engineeress_goblin",
+=======
+<<<<<<< HEAD
+    "goblins_tyranny:engineeress_goblin",
+=======
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "specialmobs:blaze",
     "valarian_conquest:galician_archer",
     "fantasyfauna:wisp",
@@ -1695,6 +3087,13 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "specialmobs:babycavespider",
     "specialmobs:icewitch",
     "threateningly_mobs:cure_totem",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+    "more_critters:black_iropod",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "pumpeddesertremake:fennec",
     "trolls:troll_warrior_2x",
     "mocreatures:silverskeleton",
@@ -1703,40 +3102,96 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "valarian_conquest:gardonian_archer",
     "pumpeddesertremake:ostrich_baybe",
     "miniboss_boss_bars:viraicochabossbarentity",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "goblins_tyranny:mini_goblin_1",
     "goblins_tyranny:mini_goblin_2",
     "goblins_tyranny:mini_goblin_3",
     "threateningly_mobs:tall_mouse",
+<<<<<<< HEAD
+=======
+=======
+    "more_critters:carrybug",
+    "threateningly_mobs:tall_mouse",
+    "aquaculture:box_turtle",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "creatures_expanded:gloomknight",
     "legendary_monsters:chorusling",
     "miniboss_boss_bars:elderguardianbossbarentity",
     "glorious_creatures:wild_boar",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "goblins_tyranny:mini_drunk_gob_2",
     "born_in_chaos_v1:krampus_henchman",
     "goblins_tyranny:mini_drunk_gob_3",
     "world:dryad_3",
     "world:dryad_2",
     "goblins_tyranny:mini_drunk_gob_1",
+<<<<<<< HEAD
+=======
+=======
+    "born_in_chaos_v1:krampus_henchman",
+    "world:dryad_3",
+    "world:dryad_2",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "valarian_conquest:lancastian_kings_guard",
     "ddenizens:daemon",
     "trolls:troll_warrior_1x",
     "trials:bogged",
     "luminous_beasts:sand_crab",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "iceandfire:dread_thrall",
     "glorious_creatures:dart_frog_alt",
     "specialmobs:poisonskeleton",
     "mocreatures:manticorepet",
     "mocreatures:turtle",
     "piglet_structures:pillager_scientist",
+<<<<<<< HEAD
+=======
+=======
+    "more_critters:wandering_collector",
+    "iceandfire:dread_thrall",
+    "peculiarpredators:yuty",
+    "glorious_creatures:dart_frog_alt",
+    "specialmobs:poisonskeleton",
+    "mocreatures:manticorepet",
+    "mawabestiary:thumper",
+    "mocreatures:turtle",
+    "aquaculture:pollock",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "orcz:weirdboinecro",
     "miniboss_boss_bars:captainrevenantbossbarentity",
     "minecraft:piglin",
     "miniboss_boss_bars:superevokerbossbarentity",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+    "unusualprehistory:ammon",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "mocreatures:maggot",
     "born_in_chaos_v1:sir_the_headless",
     "specialmobs:dominationwitch",
     "glorious_creatures:elder_pumpkin",
     "specialmobs:caramelslime",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+    "aquaculture:capitaine",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "specialmobs:zombifiedpiglin",
     "mocreatures:leopard",
     "pumpeddesertremake:red_sand_storm",
@@ -1751,12 +3206,27 @@ entities = ["minecraft:squid", "minecraft:elder_guardian", "minecraft:guardian",
     "valarian_conquest:legion_bowman",
     "terra_entity:eater_of_worlds_segment",
     "miniboss_boss_bars:krampusbossbarentity",
+<<<<<<< HEAD
     "piglet_structures:armored_garden_gnome_summon",
+=======
+<<<<<<< HEAD
+    "piglet_structures:armored_garden_gnome_summon",
+=======
+    "more_critters:stincarp",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "specialmobs:cinderblaze",
     "legendary_monsters:endersent",
     "skele:lostskeleton",
     "miniboss_boss_bars:igneorobofelinebossbarentity",
+<<<<<<< HEAD
     "piglet_structures:perceiver",
+=======
+<<<<<<< HEAD
+    "piglet_structures:perceiver",
+=======
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "progressivebosses:wither_minion",
     "terra_entity:dungeon_guardian",
     "terra_entity:anger_bones",

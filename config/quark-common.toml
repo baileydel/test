@@ -318,6 +318,15 @@
 		"Allow Opening Shulker Boxes" = true
 		"Allow Rotating Bundles" = true
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+	[management.hotbar_changer]
+		"Animation Time" = 7.0
+
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
 	[management.inventory_sorting]
 		"Enable Player Inventory" = true
 		"Enable Player Inventory In Chests" = true
@@ -334,9 +343,18 @@
 	[management.quick_armor_swapping]
 		"Swap Off Hand" = true
 
+<<<<<<< HEAD
 	[management.hotbar_changer]
 		"Animation Time" = 7.0
 
+=======
+<<<<<<< HEAD
+	[management.hotbar_changer]
+		"Animation Time" = 7.0
+
+=======
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
 [tools]
 	Abacus = true
 	"Ambient Discs" = true

@@ -7,26 +7,58 @@
     "ttsMode": "PRESS",
     "fluidMode": "ANY",
     "reachDistance": 0.0,
+<<<<<<< HEAD
     "displayEntities": true,
     "displayBosses": true,
+=======
+<<<<<<< HEAD
+    "displayEntities": true,
+    "displayBosses": true,
+=======
+    "displayEntities": false,
+    "displayBosses": false,
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "displayMode": "TOGGLE",
     "displayTooltip": true,
     "displayBlocks": true,
     "hideFromDebug": true,
     "hideFromTabList": true,
     "enableTextToSpeech": false,
+<<<<<<< HEAD
     "hintOverlayToggle": true,
+=======
+<<<<<<< HEAD
+    "hintOverlayToggle": true,
+=======
+    "hintOverlayToggle": false,
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "hintNarratorToggle": true,
     "previewOverlay": true
   },
   "overlay": {
+<<<<<<< HEAD
     "alpha": 0.71,
     "iconMode": "CENTERED",
+=======
+<<<<<<< HEAD
+    "alpha": 0.71,
+    "iconMode": "CENTERED",
+=======
+    "alpha": 0.0,
+    "iconMode": "TOP",
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "animation": true,
     "disappearingDelay": 0.0,
     "overlaySquare": true,
     "flipMainHand": false,
     "autoScaleThreshold": 0.4,
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
     "overlayPosY": 0.52,
     "overlayScale": 1.0,
     "overlayAnchorX": 0.37,
@@ -34,6 +66,18 @@
     "activeTheme": "jade:create",
     "themesHash": -328442023,
     "overlayPosX": 0.91
+<<<<<<< HEAD
+=======
+=======
+    "overlayPosY": 0.08,
+    "overlayScale": 0.89,
+    "overlayAnchorX": 0.0,
+    "overlayAnchorY": 0.0,
+    "activeTheme": "jade:waila",
+    "themesHash": -328442023,
+    "overlayPosX": 0.83
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
   },
   "formatting": {
     "modName": "§9§o%s"

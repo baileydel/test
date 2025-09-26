@@ -6,6 +6,10 @@
 		"Generate Dragon Skeletons" = true
 		#1 out of this number chance per chunk for generation
 		#Range: 1 ~ 10000
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
 		"Generate Dragon Skeleton Chance" = 300
 		#1 out of this number chance per chunk for generation
 		#Range: 1 ~ 10000
@@ -13,6 +17,18 @@
 		#1 out of this number chance per chunk for generation
 		#Range: 1 ~ 10000
 		"Generate Dragon Roost Chance" = 360
+<<<<<<< HEAD
+=======
+=======
+		"Generate Dragon Skeleton Chance" = 100
+		#1 out of this number chance per chunk for generation
+		#Range: 1 ~ 10000
+		"Generate Dragon Cave Chance" = 200
+		#1 out of this number chance per chunk for generation
+		#Range: 1 ~ 10000
+		"Generate Dragon Roost Chance" = 200
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
 		#1 out of this number chance per block that gold will generate in dragon lairs.
 		#Range: 1 ~ 10000
 		"Dragon Den Gold Amount" = 4
@@ -134,15 +150,36 @@
 		#Range: 1 ~ 10000
 		"Pixie Village Size" = 5
 		#True if pixies are allowed to steal from players
+<<<<<<< HEAD
 		"Pixies Steal Items" = true
+=======
+<<<<<<< HEAD
+		"Pixies Steal Items" = true
+=======
+		"Pixies Steal Items" = false
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
 
 	[Mobs.Cyclops]
 		#1 out of this number chance per chunk for generation
 		#Range: 1 ~ 10000
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
 		"Spawn Cyclops Cave Chance" = 100
 		#1 out of this number chance per chunk for generation
 		#Range: 1 ~ 10000
 		"Spawn Wandering Cyclops Chance" = 100
+<<<<<<< HEAD
+=======
+=======
+		"Spawn Cyclops Cave Chance" = 50
+		#1 out of this number chance per chunk for generation
+		#Range: 1 ~ 10000
+		"Spawn Wandering Cyclops Chance" = 30
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
 		#Maximum cyclops health
 		#Range: 1.0 ~ 10000.0
 		"Cyclops Max Health" = 150.0
@@ -166,7 +203,15 @@
 		"Use Siren Shader" = true
 		#1 out of this number chance per chunk for generation
 		#Range: 1 ~ 10000
+<<<<<<< HEAD
 		"Spawn Sirens Chance" = 400
+=======
+<<<<<<< HEAD
+		"Spawn Sirens Chance" = 400
+=======
+		"Spawn Sirens Chance" = 20
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
 		#how long(in ticks) can a siren use its sing effect on a player, without a cooldown.
 		#Range: 100 ~ 24000
 		"Siren Max Sing Time" = 12000
@@ -236,7 +281,15 @@
 		"Trolls Drop Weapon" = true
 		#Troll spawn weight. Lower = lower chance to spawn
 		#Range: 1 ~ 10000
+<<<<<<< HEAD
 		"Troll Spawn Weight" = 40
+=======
+<<<<<<< HEAD
+		"Troll Spawn Weight" = 40
+=======
+		"Troll Spawn Weight" = 200
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
 		#Maximum troll health
 		#Range: 1.0 ~ 10000.0
 		"Troll Max Health" = 50.0
@@ -291,7 +344,15 @@
 	[Mobs.SeaSerpents]
 		#1 out of this number chance per chunk for generation
 		#Range: 1 ~ 10000
+<<<<<<< HEAD
 		"Spawn Sea Serpent Chance" = 250
+=======
+<<<<<<< HEAD
+		"Spawn Sea Serpent Chance" = 250
+=======
+		"Spawn Sea Serpent Chance" = 150
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
 		#Whether or not sea serpents can break weak blocks in their way
 		"Sea Serpent Griefing" = true
 		#Default sea serpent health, this is scaled to the sea serpent's particular size

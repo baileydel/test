@@ -6,7 +6,15 @@
 	#Not recommended for computers without a significant number of cores available.
 	alwaysSetupTerrainOffThread = false
 	#EXPERIMENTAL: Enable the Forge block rendering pipeline - fixes the lighting of custom models.
+<<<<<<< HEAD
 	experimentalForgeLightPipelineEnabled = false
+=======
+<<<<<<< HEAD
+	experimentalForgeLightPipelineEnabled = false
+=======
+	experimentalForgeLightPipelineEnabled = true
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
 	#When enabled, Forge will show any warnings that occurred during loading.
 	showLoadWarnings = true
 	#Set to true to use a combined DEPTH_STENCIL attachment instead of two separate ones.

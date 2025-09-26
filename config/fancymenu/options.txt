@@ -1,19 +1,42 @@
 ##[general]
 
 I:default_gui_scale = '-1';
+<<<<<<< HEAD
 B:play_vanilla_menu_music = 'true';
+=======
+<<<<<<< HEAD
+B:play_vanilla_menu_music = 'true';
+=======
+B:play_vanilla_menu_music = 'false';
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
 B:force_fullscreen = 'false';
 
 
 ##[customization]
 
 B:modpack_mode = 'false';
+<<<<<<< HEAD
 B:show_customization_overlay = 'false';
+=======
+<<<<<<< HEAD
+B:show_customization_overlay = 'false';
+=======
+B:show_customization_overlay = 'true';
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
 B:advanced_customization_mode = 'false';
 
 
 ##[loading]
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+B:preload_animations = 'true';
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
 S:preload_resources = '';
 S:custom_game_intro_skip_text = '';
 B:allow_game_intro_skip = 'true';
@@ -64,7 +87,15 @@ D:anchor_overlay_hover_charging_time_seconds = '2.0';
 I:context_menu_hover_open_speed = '1';
 S:ui_theme = 'dark';
 F:ui_scale = '4.0';
+<<<<<<< HEAD
 B:play_ui_click_sounds = 'true';
+=======
+<<<<<<< HEAD
+B:play_ui_click_sounds = 'true';
+=======
+B:play_ui_click_sounds = 'false';
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
 B:enable_ui_text_shadow = 'false';
 
 
@@ -84,10 +115,21 @@ B:show_welcome_screen = 'false';
 
 ##[keyframe_editor]
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
 B:arrow_keys_move_preview = 'false';
 
 
 ##[advanced]
 
 L:placeholder_caching_duration_ms = '30';
+<<<<<<< HEAD
 L:requirement_caching_duration_ms = '0';
+=======
+L:requirement_caching_duration_ms = '0';
+=======
+B:arrow_keys_move_preview = 'false';
+>>>>>>> 6206383c7f036264d908d290d17181ee59a27d6a
+>>>>>>> f2ad6c1056497b98ca9b2e5dbc8b6247b5b15eff
