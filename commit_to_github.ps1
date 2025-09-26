@@ -266,9 +266,6 @@ function Show-Menu {
 
 function Commit-Script {    
     if (Test-LocalChangesAvailable) {
-
-        Pull-Changes
-
         Write-Host "`nGit Status:"
         git status --porcelain
         Write-Host "`n"
@@ -287,19 +284,11 @@ function Commit-Script {
         git commit -m $commit_message
         Write-Host "`n"
 
+        Pull-Changes
+
         $current_branch = git branch --show-current
 
         git push -u origin $current_branch
-        if ($LASTEXITCODE -ne 0) {
-            Write-Host "Push failed. Attempting to pull and merge remote changes..."
-            git pull origin $current_branch --no-edit --allow-unrelated-histories
-            if ($LASTEXITCODE -ne 0) {
-                Write-Host "Merge failed. Please resolve conflicts manually."
-            } else {
-                Write-Host "Merge successful. Pushing again..."
-                git push -u origin $current_branch
-            }
-        }
 
         if ($LASTEXITCODE -ne 0) {
             Write-Host "`nPush failed! Check the error messages above."
