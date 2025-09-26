@@ -19,8 +19,4 @@
 !commit_to_github.bat
 !commit_to_github.ps1
 !.gitignore
-<<<<<<< HEAD
-client yes yes yes yes yes yes
-=======
 Server yes yes yes yes yes
->>>>>>> 9c62afb63317820034969364f55625e68a1cb84a
