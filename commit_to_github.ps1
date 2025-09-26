@@ -163,6 +163,8 @@ function Test-RemoteChangesAvailable {
 }
 
 function Test-LocalChangesAvailable {
+    git add .
+
     git diff --quiet
     $diff_result = $LASTEXITCODE
     git diff --cached --quiet
@@ -267,7 +269,7 @@ function Commit-Script {
 
         Pull-Changes
 
-        git add .
+
 
         Write-Host "`nGit Status:"
         git status --porcelain
