@@ -269,8 +269,6 @@ function Commit-Script {
 
         Pull-Changes
 
-
-
         Write-Host "`nGit Status:"
         git status --porcelain
         Write-Host "`n"
@@ -341,15 +339,10 @@ function Pull-Changes {
 
     if ($would_conflict) {
         Write-Host "`nLocal uncommitted changes detected that may conflict." -ForegroundColor Yellow
-       
-                Write-Host "Stashing local changes..." -ForegroundColor Yellow
-                git stash push -m "Auto-stash before pull"
 
-                git pull origin $current_branch --no-edit --allow-unrelated-histories
-
-                Write-Host "Restoring local changes..." -ForegroundColor Yellow
-                git stash pop 2>$null
-    } else {
+        git pull origin $current_branch --no-edit --allow-unrelated-histories
+    } 
+    else {
         # Clean pull
         $confirm = Read-Host "`nPull these changes? (y/n)"
         if ($confirm -eq "y" -or $confirm -eq "Y") {
